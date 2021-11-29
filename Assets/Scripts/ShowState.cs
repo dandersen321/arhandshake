@@ -13,17 +13,31 @@ public class ShowState : MonoBehaviour
     {
         sessionStatusText = this.GetComponent<TMPro.TextMeshProUGUI>();
         sessionStatusText.text = "Hello";
+        ManomotionManager.OnManoMotionFrameProcessed += motionFrameProcessed;
         //ARSession.stateChanged += HandleStateChanged;
     }
 
     // Update is called once per frame
     void Update()
     {
+        //if (ManomotionManager.Instance.Hand_infos.Length > 0)
+        //{
+        //    HandInfoUnity handInfoUnity = ManomotionManager.Instance.Hand_infos[0];
+        //    sessionStatusText.text = handInfoUnity.hand_info.gesture_info.mano_class.ToString();
+        //} else
+        //{
+        //    sessionStatusText.text = "No State atm";
+        //}
+    }
+
+    private void motionFrameProcessed()
+    {
         if (ManomotionManager.Instance.Hand_infos.Length > 0)
         {
             HandInfoUnity handInfoUnity = ManomotionManager.Instance.Hand_infos[0];
             sessionStatusText.text = handInfoUnity.hand_info.gesture_info.mano_class.ToString();
-        } else
+        }
+        else
         {
             sessionStatusText.text = "No State atm";
         }
