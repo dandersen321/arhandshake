@@ -5,7 +5,7 @@ using UnityEngine;
 public class ToggleGizmos : MonoBehaviour
 {
 
-    GizmoManager _gizmoManager;
+    private GizmoManager _gizmoManager;
 
     private void Start()
     {
@@ -103,7 +103,7 @@ public class ToggleGizmos : MonoBehaviour
     }
 
     /// <summary>
-    /// Toggles the show smoothing sliders condition.
+    /// Toggles the show smoothing slider condition.
     /// </summary>
     public void ToggleShowSmoothingSlider()
     {

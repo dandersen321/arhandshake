@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// Holds information of the frame.
+/// </summary>
 public struct ManoMotionFrame
 {
 	public int width;

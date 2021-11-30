@@ -56,7 +56,6 @@ public class ExampleSpooky : MonoBehaviour
 
 			float size = Mathf.Min(width, height);
 			spookyRectTransform.sizeDelta = new Vector2(size, size);
-
 		}
 	}
 
@@ -69,23 +68,18 @@ public class ExampleSpooky : MonoBehaviour
 	{
 		if (warning != Warning.WARNING_HAND_NOT_FOUND)
 		{
-
 			switch (gesture.mano_gesture_continuous)
 			{
 				case ManoGestureContinuous.OPEN_HAND_GESTURE:
 					spookeyImageHolder.sprite = openHandSprite;
 					break;
-
 				case ManoGestureContinuous.CLOSED_HAND_GESTURE:
 					spookeyImageHolder.sprite = closedHandSprite;
 					break;
 				default:
 					break;
 			}
-
-
 		}
-
 	}
 
 	/// <summary>
@@ -116,8 +110,6 @@ public class ExampleSpooky : MonoBehaviour
 			currentColor.a -= Time.deltaTime * fadeSpeed;
 		}
 		image.color = currentColor;
-
-
 	}
 
 	/// <summary>

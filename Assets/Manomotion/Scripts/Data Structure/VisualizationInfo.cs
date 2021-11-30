@@ -7,6 +7,8 @@ using UnityEngine;
 /// </summary>
 public struct VisualizationInfo
 {
-    // The Texture 2D information of the input image.
+    /// <summary>
+    /// The Texture 2D information of the input image.
+    /// </summary>
     public Texture2D rgb_image;    
 }

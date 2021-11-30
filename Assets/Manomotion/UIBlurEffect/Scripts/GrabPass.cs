@@ -27,5 +27,6 @@ public class GrabPass : MonoBehaviour
     {
         GetComponent<Image>().material.SetFloat("_Distortion", Distortion);
         GetComponent<Image>().material.SetColor("_Color", color);
+
     }
 }

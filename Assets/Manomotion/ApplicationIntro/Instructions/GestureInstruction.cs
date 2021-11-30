@@ -34,11 +34,14 @@ public class GestureInstruction : Instruction
             GrabReleaseGestureToPerform.howToPerformTriggerDescription.Add(howToPerformGrab);
             triggerGesturesToPerformInstructions.Add(GrabReleaseGestureToPerform);
 
+
             string howToPerformPick = "Perform a Pick by just closing your thumb and index fingers together";
             string howToPerformDrop = "Now perform a Drop by opening your thumb and index fingers";
             TriggerGestureToPerformInstruction PickDropGestureToPerform = new TriggerGestureToPerformInstruction(new List<ManoGestureTrigger> { ManoGestureTrigger.PICK, ManoGestureTrigger.DROP }, new List<string> { howToPerformPick, howToPerformDrop });
             triggerGesturesToPerformInstructions.Add(PickDropGestureToPerform);
+
         }
+
     }
 
     void InitializeInstruction()
@@ -66,6 +69,11 @@ public class GestureInstruction : Instruction
         RepondToUserActions();
     }
 
+
+
+
+
+
     //This is how the system responds to user input
     private void RepondToUserActions()
     {
@@ -79,10 +87,18 @@ public class GestureInstruction : Instruction
                 HandleCorrectUserGestureInput();
             }
         }
+
     }
 
     private void HandleCorrectUserGestureInput()
     {
+        //I get an argument out of range exception here
+
+        //ArgumentOutOfRangeException: Argument is out of range.
+        //     Parameter name: index
+        //       at System.Collections.Generic.List`1[T].get_Item(Int32 index)[0x00000] in < filename unknown >:0
+        //   at GestureInstruction.HandleCorrectUserGestureInput()[0x00000] in < filename unknown >:0
+
         //The max is the length of the current trigger list
         int totalTriggersForGesture = triggerGesturesToPerformInstructions[_currentInstructionStep].triggerGestures.Count - 1;
         string currentInstructionToDisplay = "";
@@ -93,8 +109,8 @@ public class GestureInstruction : Instruction
             ammountOfTriggersPerformed++;
             currentInstructionToDisplay = triggerGesturesToPerformInstructions[_currentInstructionStep].howToPerformTriggerDescription[ammountOfTriggersPerformed];
             UpdateRequestedTrigger();
-        }
 
+        }
         else
         {
             //I have performed all the triggers required for the gesture example Grab AND Release ( that is consider 1 out of 3)
@@ -108,17 +124,27 @@ public class GestureInstruction : Instruction
                 ApplicationManager.Instance.howToInstructor.triggerAnimations.HighlightImagesUpToStep(numberOfCompleteSetOfTriggersPerformed);
 
                 Debug.LogFormat("I have completed {0} complete Sets ", numberOfCompleteSetOfTriggersPerformed);
-            }
-        }
 
+            }
+
+
+        }
         //This means that I have performed 3xtimes Grab/Release
+
         if (numberOfCompleteSetOfTriggersPerformed == triggersNeeded && !isChanging)
         {
+
             ProgressWithInstructionStep();
         }
         //I get the exception sometimes
         ApplicationManager.Instance.howToInstructor.UpdateCurrentInstructionStepOnCanvas(currentInstructionToDisplay);
+
+
+
+
     }
+
+
 
     /// <summary>
     /// Handles the behavior of progressing with the Instruction steps
@@ -176,12 +202,36 @@ public class GestureInstruction : Instruction
         ApplicationManager.Instance.howToInstructor.UpdateCurrentInstructionStepOnCanvas(currentDescription);
     }
 
+    //[SerializeField]
+    //Text currentRequested;
+
+    //[SerializeField]
+    //Text clickEnabled;
+
+    //[SerializeField]
+    //Text grabEnabled;
+
+    //[SerializeField]
+    //Text releaseEnabled;
+
+    //[SerializeField]
+    //Text pickEnabled;
+
+    //[SerializeField]
+    //Text dropEnabled;
+
+    //[SerializeField]
+    //Text respondingText;
+
     private void UpdateRequestedTrigger()
     {
+        //The issue that I am facing is that when I update the trigger It changes so fast that I am not able to show the trigger
         try
         {
+
             if (_currentInstructionStep < _instructionSteps - 1)
             {
+
                 requestedTrigger = triggerGesturesToPerformInstructions[_currentInstructionStep].triggerGestures[ammountOfTriggersPerformed];
                 StartCoroutine(DisableTriggersAfterDelay(delay, requestedTrigger));
 
@@ -222,6 +272,10 @@ public class GestureInstruction : Instruction
         {
             Debug.Log("I cant assign trigger");
         }
+
+
+
+
     }
 
     IEnumerator DisableTriggersAfterDelay(float time, ManoGestureTrigger trigger)
@@ -239,6 +293,7 @@ public class GestureInstruction : Instruction
 
         InitializeInstruction();
         UpdateRequestedTrigger();
+
     }
 
     override public void StopResponding()
@@ -247,9 +302,13 @@ public class GestureInstruction : Instruction
         ApplicationManager.Instance.howToInstructor.triggerAnimations.ShouldDisplayImageSteps(_shouldRespondToUserInput);
         ApplicationManager.Instance.howToInstructor.triggerAnimations.ShouldShowAnimationImage(_shouldRespondToUserInput);
         ApplicationManager.Instance.runTimeApplication.DisableAllTriggers();
-    }
-}
 
+    }
+
+
+
+
+}
 /// <summary>
 /// Trigger gesture to perform instruction.
 /// </summary>

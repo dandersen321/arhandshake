@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
-
 [AddComponentMenu("ManoMotion/ManoEvents")]
 public class ManoEvents : MonoBehaviour
 {
@@ -24,7 +23,8 @@ public class ManoEvents : MonoBehaviour
 	#endregion
 
 	[SerializeField]
-	private Animator statusAnimator;
+	Animator statusAnimator;
+
 	private string debugMessage = "";
 
 	private void Awake()
@@ -80,7 +80,7 @@ public class ManoEvents : MonoBehaviour
 				DisplayLogMessage("Licence access denied");
 				break;
 			case LicenseAnswer.LICENSE_MAX_NUM_DEVICES:
-				DisplayLogMessage("Licence out of credits");
+				DisplayLogMessage("Licence out of credits\t");
 				break;
 			case LicenseAnswer.LICENSE_UNKNOWN_SERVER_REPLY:
 				DisplayLogMessage("Unknown Server Reply");
@@ -89,13 +89,13 @@ public class ManoEvents : MonoBehaviour
 				DisplayLogMessage("Licence product");
 				break;
 			case LicenseAnswer.LICENSE_INCORRECT_INPUT_PARAMETER:
-				DisplayLogMessage("Incorrect Licence");
+				DisplayLogMessage("Incorect Licence");
 				break;
 			case LicenseAnswer.LICENSE_INTERNET_REQUIRED:
 				DisplayLogMessage("Internet Required");
 				break;
 			case LicenseAnswer.LICENSE_INCORRECT_BUNDLE_ID:
-				DisplayLogMessage("Incorrect Bundle ID");
+				DisplayLogMessage("Incorect Bundle ID");
 				break;
 			default:
 				break;
@@ -115,5 +115,4 @@ public class ManoEvents : MonoBehaviour
 		statusAnimator.Play("SlideIn");
 		statusAnimator.GetComponentInChildren<Text>().text = message;
 	}
-
 }

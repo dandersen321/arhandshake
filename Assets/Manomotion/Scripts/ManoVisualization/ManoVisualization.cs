@@ -12,7 +12,11 @@ public class ManoVisualization : MonoBehaviour
     private Transform bounding_box_prefab;
 
     [SerializeField]
-    private bool _show_bounding_box, _show_background;
+    private bool _show_bounding_box;
+
+    //Not the AR Background but a Plane Mesh filled with the camera info from ManoMotion
+    //[SerializeField]
+    private bool _show_background;
 
     [SerializeField]
     private Camera cam;
@@ -26,7 +30,7 @@ public class ManoVisualization : MonoBehaviour
     private GameObject bounding_box_parent;
     private MeshRenderer _layer_background;
 
-    private int handsSupportedByLicence;
+    int handsSupportedByLicence;
 
     #endregion
 
@@ -62,34 +66,13 @@ public class ManoVisualization : MonoBehaviour
 
     #region Initializing Components
 
-    void Start()
-    {
-        if (!cam)
-        {
-            cam = Camera.main;
-        }
-
-        SetHandsSupportedByLicence();
-        InstantiateManomotionMeshes();
-        CreateBoundingBoxes();
-        ManomotionManager.OnManoMotionFrameProcessed += DisplayInformationAfterManoMotionProcessFrame;
-    }
-
-    /// <summary>
-    /// Set the maximum number of hands that can be simultaneously detected by Manomotion Manager based on the licence.
-    /// This process is based on your Licence privilliges.
-    /// </summary>
-    void SetHandsSupportedByLicence()
-    {
-        handsSupportedByLicence = 1;
-    }
 
     /// <summary>
     /// Creates the meshes needed by the different Manomotion Layers and also parents them to the scene's Main Camera
     /// </summary>
     private void InstantiateManomotionMeshes()
     {
-        int backgroundInitialDepth = 10;
+        int backgroundInitialDepth = 1;
         GameObject background = Instantiate(manomotionGenericLayer);
         background.transform.name = "Background";
         background.transform.SetParent(cam.transform);
@@ -114,10 +97,29 @@ public class ManoVisualization : MonoBehaviour
             bounding_box[i].SetParent(bounding_box_parent.transform);
             bounding_box[i].gameObject.name = "BoundingBox";
             bounding_box_ui[i] = bounding_box[i].GetComponent<BoundingBoxUI>();
-            bounding_box_ui[i].myBoundingBoxType = BoundingBoxUI.BoundingBoxType.Outer;
+
         }
     }
 
+    void Start()
+    {
+        if (!cam)
+            cam = Camera.main;
+
+        SetHandsSupportedByLicence();
+        InstantiateManomotionMeshes();
+        CreateBoundingBoxes();
+        ManomotionManager.OnManoMotionFrameProcessed += DisplayInformationAfterManoMotionProcessFrame;
+    }
+
+    /// <summary>
+    /// Set the maximum number of hands that can be simultaneously detected by Manomotion Manager based on the licence.
+    /// This process is based on your Licence privilliges.
+    /// </summary>
+    void SetHandsSupportedByLicence()
+    {
+        handsSupportedByLicence = 1;
+    }
     #endregion
 
     /// <summary>
@@ -152,11 +154,11 @@ public class ManoVisualization : MonoBehaviour
             }
             if (bounding_box_ui[index])
             {
+
                 if (!bounding_box_ui[index].gameObject.activeInHierarchy)
                 {
                     bounding_box_ui[index].gameObject.SetActive(true);
                 }
-
                 bounding_box_ui[index].UpdateInfo(tracking_info.bounding_box);
             }
         }

@@ -48,6 +48,7 @@ namespace ManoMotion.UI.Buttons
 			thisButton = this.GetComponent<Button>();
 			buttonFrame = transform.Find("Frame").GetComponent<Image>();
 			buttonIcon = transform.Find("Icon").GetComponent<Image>();
+
 		}
 
 		private void Start()
@@ -76,6 +77,7 @@ namespace ManoMotion.UI.Buttons
 				buttonFrame.sprite = activeFrame;
 				buttonIcon.color = activeColor;
 			}
+
 			else
 			{
 				buttonFrame.sprite = inactiveFrame;
@@ -95,6 +97,7 @@ namespace ManoMotion.UI.Buttons
 		public void SetIsActive(bool state)
 		{
 			isActive = state;
+			//This creates a problem
 			UpdateIconAndFrame(state);
 		}
 

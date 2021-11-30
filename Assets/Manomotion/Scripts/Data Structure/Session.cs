@@ -12,7 +12,7 @@ public enum AddOn
 };
 
 /// <summary>
-/// Provides additional information about the image being sent to the SDK.
+/// Provides additional information regarding the image being sent to the SDK.
 /// </summary>
 public enum Flags
 {
@@ -20,6 +20,9 @@ public enum Flags
 	FLAG_IMAGE_IS_TOO_SMALL = 1001
 };
 
+/// <summary>
+/// The session used.
+/// </summary>
 public struct Session
 {
 	public Flags flag;
@@ -31,7 +34,7 @@ public struct Session
 }
 
 /// <summary>
-/// 0 for not using it and 1 for using it
+/// 1 for using it and 0 for not using it.
 /// </summary>
 public struct Features
 { 

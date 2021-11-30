@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 /// Contrains information about the hand
 /// </summary>
 public struct HandInfoUnity
-{ 
+{
     /// <summary>
     /// Information about position
     /// </summary>

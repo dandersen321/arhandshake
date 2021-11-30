@@ -55,12 +55,11 @@ namespace ManoMotion.TermsAndServices
             {
                 hasUserApprovedUse = PlayerPrefs.GetInt(playerPrefsPolicy) == (int)AccessState.Granted;
                 if (hasUserApprovedUse)
-                {                   
+                {
                     ApprovePrivacyPolicy();
                 }
                 else
                 {
-                    //Comments for flow
                     Debug.Log("User has they key but has not approved the policy");
                     Debug.LogFormat("The value of hasUserApprovedUse is {0}", hasUserApprovedUse);
                 }
@@ -70,6 +69,7 @@ namespace ManoMotion.TermsAndServices
             {
                 hasUserApprovedUse = false;
                 PlayerPrefs.SetInt(playerPrefsPolicy, (int)AccessState.ShouldAsk);
+
             }
         }
 
@@ -90,7 +90,6 @@ namespace ManoMotion.TermsAndServices
             PlayerPrefs.SetInt(playerPrefsPolicy, (int)AccessState.Granted);
             hasUserApprovedUse = PlayerPrefs.GetInt(playerPrefsPolicy) == (int)AccessState.Granted;
             ClosePrivacyPolicy();
-
             if (OnHasApprovedPrivacyPolicy != null)
             {
                 OnHasApprovedPrivacyPolicy();

@@ -21,34 +21,27 @@ public class CubeSpawn : MonoBehaviour
     float timeToDie;
     public Material[] colorMaterials;
 
-
     public void InitializeCubeParts()
     {
         rigidbody = this.GetComponent<Rigidbody>();
         meshRenderer = this.GetComponent<MeshRenderer>();
         this.gameObject.tag = CubeGameManager.Instance.interactableTag;
-
-
     }
-
 
     public void AwardPoints()
     {
         CubeGameManager.Instance.AwardPoints(pointsWorth);
-
         this.gameObject.SetActive(false);
     }
 
     public void Randomize()
     {
-
         float difficultyTier = 1.5f;
         int maxValue = Enum.GetValues(typeof(CybeType)).Length;
         int minValue = 0;
         int pointsInflation = 5;
 
         int randomType = UnityEngine.Random.Range(minValue, maxValue);
-
 
         meshRenderer.material = colorMaterials[randomType];
 
@@ -63,6 +56,7 @@ public class CubeSpawn : MonoBehaviour
             pointsWorth = -5;
             timeToDie = 2;
         }
+
         float minXForce = -50;
         float maxXForce = 50;
         float yForce = 50;
@@ -72,7 +66,6 @@ public class CubeSpawn : MonoBehaviour
         StartCoroutine(DisableAfterTime(timeToDie));
     }
 
-
     IEnumerator DisableAfterTime(float time)
     {
         yield return new WaitForSeconds(time);
@@ -81,7 +74,5 @@ public class CubeSpawn : MonoBehaviour
         {
             this.gameObject.SetActive(false);
         }
-
-
     }
 }

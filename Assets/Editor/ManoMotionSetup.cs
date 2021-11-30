@@ -1,27 +1,31 @@
-﻿using UnityEngine;
+﻿//20/11/2019 Credits to Alpha Developer Sathish Raja Bommannan for contributing to our tech.
+
+using UnityEngine;
 using UnityEditor;
 #if UNITY_ANDROID
 using UnityEngine.Android;
 using System;
 #endif
-
 [InitializeOnLoad]
 public class ManoMotionSetup
 {
-    /// <summary>
-    /// Automaticly sets up the "Project Settings/Player/Other Settings" for you.
-    /// </summary>
     static ManoMotionSetup()
     {
-       
         if (PlayerSettings.applicationIdentifier.Contains("com.DefaultCompany"))
         {
-            PlayerSettings.applicationIdentifier = "com.manomotion.sdkceexample";
-            Debug.Log("Setting bundle id to com.manomotion.sdkceexample from ManoMotionSetup script");
+            PlayerSettings.applicationIdentifier = "com.manomotion.arfoundationssdkceexample";
+            Debug.Log("Setting bundle id to com.manomotion.arfoundationssdkceexample from ManoMotionSetup script");
         }
 
 #if UNITY_ANDROID
         Debug.Log("Setting up ManoMotion Library Requirements");
+
+        if (PlayerSettings.Android.minSdkVersion <= AndroidSdkVersions.AndroidApiLevel23)
+        {
+            PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel24;
+            Debug.Log("Setting Minimum Android API level to 24");
+        }
+
         PlayerSettings.Android.preferredInstallLocation = AndroidPreferredInstallLocation.PreferExternal;
         PlayerSettings.Android.forceInternetPermission = true;
         PlayerSettings.Android.forceSDCardPermission = true;
@@ -31,6 +35,10 @@ public class ManoMotionSetup
 #endif
 #if UNITY_IOS
         int arm64Architecture = 1;
+        if (PlayerSettings.iOS.targetOSVersionString == "10.0")
+        {
+            PlayerSettings.iOS.targetOSVersionString = "11.0";
+        }
         PlayerSettings.SetArchitecture(BuildTargetGroup.iOS, arm64Architecture);
         if (PlayerSettings.iOS.cameraUsageDescription == "")
         {

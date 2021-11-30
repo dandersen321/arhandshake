@@ -1,26 +1,34 @@
 ﻿using UnityEngine;
+using System;
+
 public class ToggleVisualizationValues : MonoBehaviour
 {
-	ManoVisualization _manoVisualization;
+    public static Action<bool> OnShowBoundingBoxValueChanged;
 
-	private void Start()
-	{
-		_manoVisualization = GetComponent<ManoVisualization>();
-	}
+    private ManoVisualization _manoVisualization;
 
-	/// <summary>
-	/// Toggles the boolean of showing the background layer.
-	/// </summary>
-	public void ToggleShowBackgroundLayer()
-	{
-		_manoVisualization.Show_background = !_manoVisualization.Show_background;
-	}
+    private void Start()
+    {
+        _manoVisualization = GetComponent<ManoVisualization>();
+    }
 
-	/// <summary>
-	/// Toggles the boolean value for showing the bounding box.
-	/// </summary>
-	public void ToggleBoundingBox()
-	{
-		_manoVisualization.Show_bounding_box = !_manoVisualization.Show_bounding_box;
-	}
+    /// <summary>
+    /// Toggles the boolean of showing the background layer.
+    /// </summary>
+    public void ToggleShowBackgroundLayer()
+    {
+        _manoVisualization.Show_background = !_manoVisualization.Show_background;
+    }
+
+    /// <summary>
+    /// Toggles the boolean value for showing the bounding box.
+    /// </summary>
+    public void ToggleBoundingBox()
+    {
+        _manoVisualization.Show_bounding_box = !_manoVisualization.Show_bounding_box;
+        if (OnShowBoundingBoxValueChanged != null)
+        {
+            OnShowBoundingBoxValueChanged(_manoVisualization.Show_bounding_box);
+        }
+    }
 }

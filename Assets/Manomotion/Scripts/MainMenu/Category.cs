@@ -6,30 +6,33 @@ public class Category : MonoBehaviour
 {
     public string categoryName;
     public int categoryOrder;
-
     public GameObject[] icons;
     public List<UIIconBehavior> iconBehaviors = new List<UIIconBehavior>();
+    public GameObject[,] iconArray;
 
     #region UIValues
+
+    public int maxIconsForRow;
+    public float categoryPositionY;
+    public int categoryHeight;
+    public int numberOfRows;
+
     private int defaultHeight = 160;
     private int extraHeightForRow = 100;
     private int iconWidth = 60;
     private int iconLeftMargin;
     private int iconRightMargin;
     private int iconSpaceTaken;
-    public int maxIconsForRow;
-    public float categoryPositionY;
     private int categoryWidth;
-    public int categoryHeight;
-    public int numberOfRows;
-    RectTransform rt;
+    private RectTransform rt;
+
     #endregion
 
     private void Awake()
     {
         InitializeIconBehaviors();
-
     }
+
     void Start()
     {
         InitializeUIValues();
@@ -56,12 +59,9 @@ public class Category : MonoBehaviour
     /// Calculates the dimensions.
     /// </summary>
     public void CalculateDimensions()
-
     {
         StartCoroutine(Calculate());
     }
-
-    public GameObject[,] iconArray;
 
     /// <summary>
     /// Calculate the dimensions of each category in order to align the icons.
@@ -71,17 +71,13 @@ public class Category : MonoBehaviour
     {
         yield return new WaitForSeconds(0.05f);
         categoryWidth = Mathf.RoundToInt(rt.rect.width);
-
         numberOfRows = Mathf.CeilToInt((float)iconSpaceTaken * icons.Length / categoryWidth);
-
         categoryHeight = (Mathf.Max(numberOfRows, 1) * 100) + 50;
 
         //Fix the size of the category
         rt.sizeDelta = new Vector2(0, categoryHeight);
-
         maxIconsForRow = categoryWidth / iconSpaceTaken;
         rt = this.GetComponent<RectTransform>();
-
         categoryPositionY = rt.anchoredPosition.y;
 
         //Allign the icons inside the space of the category

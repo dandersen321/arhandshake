@@ -15,7 +15,6 @@ public class IconMainMenu : MonoBehaviour
         currentOrientation = ScreenOrientation.Unknown;
     }
 
-    // Update is called once per frame
     void Update()
     {
         CheckForScreenOrientationChange();

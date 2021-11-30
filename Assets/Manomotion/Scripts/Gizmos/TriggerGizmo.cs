@@ -5,16 +5,13 @@ using UnityEngine.UI;
 public class TriggerGizmo : MonoBehaviour
 {
     public float fadeSpeed = 20f;
-
     private float currentAlphaValue = 1f;
-    private Text triggerLabelText;
-
-    private Vector3 increaseScaleFactor;
     public bool canExpand;
-
     public Color clickColor, pickColor, dropColor, grabColor, releaseColor, tapColor;
 
-    Vector3 originalScale = Vector3.one * 0.5f;
+    private Text triggerLabelText;
+    private Vector3 increaseScaleFactor;
+    private Vector3 originalScale = Vector3.one * 0.5f;
 
     void OnEnable()
     {
@@ -40,6 +37,7 @@ public class TriggerGizmo : MonoBehaviour
             if (currentAlphaValue < 0.05f)
             {
                 canExpand = false;
+
             }
         }
         else
@@ -81,8 +79,6 @@ public class TriggerGizmo : MonoBehaviour
             case ManoGestureTrigger.RELEASE_GESTURE:
                 triggerLabelText.text = "Release";
                 triggerLabelText.color = releaseColor;
-                break;
-            default:
                 break;
         }
     }

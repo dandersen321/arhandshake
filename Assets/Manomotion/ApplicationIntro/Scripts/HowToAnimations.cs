@@ -5,10 +5,13 @@ using UnityEngine.UI;
 
 public class HowToAnimations : MonoBehaviour
 {
+
+
     [SerializeField]
     GameObject gestureAnimationsObject;
     [SerializeField]
     Animator gestureAnimator;
+
 
     [SerializeField]
     Image howToImage;
@@ -25,10 +28,13 @@ public class HowToAnimations : MonoBehaviour
     [SerializeField]
     Image handOutline;
 
+
+
     public void ShouldShowCheckMark(bool condition)
     {
         checkMark.enabled = condition;
     }
+
 
     public void HighlightImagesUpToStep(int currentStep)
     {
@@ -37,6 +43,7 @@ public class HowToAnimations : MonoBehaviour
             currentStep = steps.Length;
         }
         ShouldShowCheckMark(currentStep == steps.Length);
+
 
         for (int i = 0; i < steps.Length; i++)
         {
@@ -47,6 +54,7 @@ public class HowToAnimations : MonoBehaviour
             else
             {
                 steps[i].color = inactiveStepColor;
+
             }
         }
     }
@@ -97,28 +105,31 @@ public class HowToAnimations : MonoBehaviour
     string grabAnimationName = "GrabAnimation";
     string releaseAnimationName = "ReleaseAnimation";
 
+
     public void ShowHowToPick()
     {
         gestureAnimator.Play(pickAnimationName);
     }
-
     public void ShowHowToDrop()
     {
         gestureAnimator.Play(dropAnimationName);
-    }
 
+    }
     public void ShowHowToClick()
     {
         gestureAnimator.Play(clickAnimationName);
-    }
 
+    }
     public void ShowHowToGrab()
     {
         gestureAnimator.Play(grabAnimationName);
-    }
 
+    }
     public void ShowHowToRelease()
     {
         gestureAnimator.Play(releaseAnimationName);
+
     }
+
+
 }

@@ -31,8 +31,8 @@ public struct TrackingInfo
     public Vector3 palm_center;
 
     /// <summary>
-    /// Provides tracking information regarding an estimation of the hand depth. 
-    /// it yields a float value depending based on the distance of the hand from the camera.
+    /// Provides tracking information regarding an estimation  of the hand depth. 
+    /// it yields a 0-1 float value depending based on the distance of the hand from the camera.
     /// </summary>
     public float depth_estimation;
 }

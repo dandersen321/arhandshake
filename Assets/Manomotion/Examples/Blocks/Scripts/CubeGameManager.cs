@@ -36,6 +36,7 @@ public class CubeGameManager : MonoBehaviour
 		}
 	}
 	public string interactableTag = "ExampleBlock";
+
 	private void Start()
 	{
 		instructions.SetActive(!gameHasStarted);
@@ -51,9 +52,12 @@ public class CubeGameManager : MonoBehaviour
 	public ManoClass movingManoclass = ManoClass.PINCH_GESTURE;
 
 	public GameObject cursor;
+
 	RectTransform cursorRectTransform;
+
 	[SerializeField]
 	GameObject instructions;
+
 	[SerializeField]
 	Text scoreKeeper;
 
@@ -134,12 +138,16 @@ public class CubeGameManager : MonoBehaviour
 				scoreKeeper.enabled = gameHasStarted;
 			}
 
-			Ray ray = Camera.main.ScreenPointToRay(cursorRectTransform.transform.position);
-			RaycastHit hit;
+			Ray ray = Camera.main.ScreenPointToRay(cursorRectTransform.position);
+            RaycastHit hit;
+
+            Debug.Log("Ray is fired");
 
 			if (Physics.Raycast(ray.origin, ray.direction, out hit))
 			{
-				if (hit.transform.tag == interactableTag)
+                Debug.Log("Ray has hit: " + hit.transform.name);
+
+                if (hit.transform.tag == interactableTag)
 				{
 					hit.transform.GetComponent<CubeSpawn>().AwardPoints();
 					Handheld.Vibrate();

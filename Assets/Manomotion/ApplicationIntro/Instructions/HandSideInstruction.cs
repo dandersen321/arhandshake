@@ -26,6 +26,8 @@ public class HandSideInstruction : Instruction
         this._stepInstructions[0] = "Place your hand with your palm side facing the camera.";
         this._stepInstructions[1] = "Great! Now try to place your hand with your hand's back side facing the camera";
         this._stepInstructions[2] = "Legend! You are ready to see more features. Tap on the thumbs up icon";
+
+
     }
 
     private void Update()
@@ -52,9 +54,12 @@ public class HandSideInstruction : Instruction
                 if (currentFramesDetected == framesNeededOfDetection)
                 {
                     ProgressWithInstructionStep();
+
                 }
+
             }
         }
+
     }
 
     /// <summary>
@@ -71,9 +76,12 @@ public class HandSideInstruction : Instruction
             ApplicationManager.Instance.runTimeApplication.ShouldShowHandSide(false);
             ApplicationManager.Instance.howToInstructor.HighlightConfirmation();
             StopResponding();
+
         }
 
         ApplicationManager.Instance.howToInstructor.UpdateCurrentInstructionStepOnCanvas(this._stepInstructions[_currentInstructionStep]);
+
+
     }
 
     private void UpdateHandSideNeeded()
@@ -86,6 +94,7 @@ public class HandSideInstruction : Instruction
             case 1:
                 requestedHandSide = HandSide.Backside;
                 break;
+
             default:
                 break;
         }
@@ -97,11 +106,14 @@ public class HandSideInstruction : Instruction
         ApplicationManager.Instance.runTimeApplication.ShouldShowHandSide(true);
         this._shouldRespondToUserInput = true;
         UpdateHandSideNeeded();
+
     }
 
     override public void StopResponding()
     {
         this._shouldRespondToUserInput = false;
         ApplicationManager.Instance.runTimeApplication.ShouldShowHandSide(false);
+
     }
+
 }

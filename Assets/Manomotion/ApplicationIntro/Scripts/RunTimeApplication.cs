@@ -13,6 +13,8 @@ namespace ManoMotion.RunTime
         private List<GameObject> runTimeObjects = new List<GameObject>();
         private List<UIIconBehavior.IconFunctionality> defaultFunctionality = new List<UIIconBehavior.IconFunctionality>();
 
+        private Dictionary<UIIconBehavior.IconFunctionality, bool> featureDictionary = new Dictionary<UIIconBehavior.IconFunctionality, bool>();
+
         //Used to store the current values about wich features to show after the instructions.
         private bool showHandStates;
         private bool showManoClass;
@@ -27,7 +29,6 @@ namespace ManoMotion.RunTime
         private bool showGrabTriggerGesture;
         private bool showReleaseTriggerGesture;
         private bool showSmoothingSlider;
-        private bool showGestureSmoothingSlider;
         private bool showDepthEstimation;
         private bool showBackground;
         private bool showBoundingBox;
@@ -50,6 +51,7 @@ namespace ManoMotion.RunTime
                 try
                 {
                     manoVisualization = GameObject.Find("ManoVisualization").GetComponent<ManoVisualization>();
+
                 }
                 catch (Exception ex)
                 {
@@ -62,6 +64,7 @@ namespace ManoMotion.RunTime
                 try
                 {
                     gizmoManager = GameObject.Find("GizmoCanvas").GetComponent<GizmoManager>();
+
                 }
                 catch (Exception ex)
                 {
@@ -99,6 +102,7 @@ namespace ManoMotion.RunTime
                 catch (Exception ex)
                 {
                     Debug.Log("Cannot find the Main Features Object");
+
                 }
             }
 
@@ -141,7 +145,7 @@ namespace ManoMotion.RunTime
             if (CategoryManager.Instance)
             {
                 CategoryManager.Instance.SetupMenu(defaultFunctionality);
-                Debug.Log("I executed the category manager");
+                Debug.Log("Executed the category manager");
             }
             else
             {
@@ -332,19 +336,6 @@ namespace ManoMotion.RunTime
         }
 
         /// <summary>
-        /// Sets the Show smoothing slider Visualization condition.
-        /// </summary>
-        /// <param name="condition">If set to <c>true</c> condition.</param>
-        public void ShouldShowGestureSmoothingSlider(bool condition)
-        {
-            if (!gizmoManager.enabled)
-            {
-                gizmoManager.enabled = true;
-            }
-            gizmoManager.ShowSmoothingSlider = condition;
-        }
-
-        /// <summary>
         /// Sets the Show depth estimation Visualization condition.
         /// </summary>
         /// <param name="condition">If set to <c>true</c> condition.</param>
@@ -387,7 +378,6 @@ namespace ManoMotion.RunTime
         /// </summary>
         public void StartMainApplicationWithDefaultSettings()
         {
-            //Go through the list instead to see what should be on and what should be off
             menuToggleButtonObject.SetActive(true);
             menuToggleButtonObject.transform.GetChild(0).GetComponent<MenuButton>().CloseMenuAndShowManoMotionCanvas();
 
@@ -408,7 +398,6 @@ namespace ManoMotion.RunTime
             ShouldShowHandStates(false);
             ShouldShowContinousGesture(false);
             ShouldShowSmoothingSlider(false);
-            ShouldShowGestureSmoothingSlider(false);
             ShouldShowPoi(false);
             ShouldShowDepth(false);
         }
@@ -517,7 +506,6 @@ namespace ManoMotion.RunTime
             ShouldShowHandStates(showHandStates);
             ShouldShowContinousGesture(showContinuousGestures);
             ShouldShowSmoothingSlider(showSmoothingSlider);
-            ShouldShowGestureSmoothingSlider(showSmoothingSlider);
             ShouldShowPoi(showPOI);
             ShouldShowDepth(showDepthEstimation);
             EnableAllTriggers();

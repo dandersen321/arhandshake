@@ -5,13 +5,14 @@ using System;
 using UnityEngine.UI;
 namespace ManoMotion.HowToUse
 {
+    public enum InstructionsState
+    {
+        ShouldSee = -1,
+        Seen = 1,
+    }
+
     public class HowToInstructor : MonoBehaviour
     {
-        public enum InstructionsState
-        {
-            ShouldSee = 0,
-            Seen = 1,
-        }
 
         bool hasPlayerSeenInstructions;
         string instructionsKey = "Instructions";
@@ -51,6 +52,18 @@ namespace ManoMotion.HowToUse
 
         bool displayCard;
 
+        /// <summary>
+        /// If no value is stored in the PlayerPrefs we set a value and saves it.
+        /// </summary>
+        private void Awake()
+        {
+            if (!PlayerPrefs.HasKey(instructionsKey))
+            {
+                PlayerPrefs.SetInt(instructionsKey, (int)InstructionsState.ShouldSee);
+                PlayerPrefs.Save();
+            }
+        }
+
         private void Update()
         {
             HandleInstructionsHighlight();
@@ -61,6 +74,9 @@ namespace ManoMotion.HowToUse
             RetrieveInstructionsHistory();
         }
 
+        /// <summary>
+        /// Check if instrucations have been seen or should be seen.
+        /// </summary>
         void RetrieveInstructionsHistory()
         {
             hasPlayerSeenInstructions = PlayerPrefs.GetInt(instructionsKey) == (int)InstructionsState.Seen;
@@ -73,6 +89,8 @@ namespace ManoMotion.HowToUse
             else
             {
                 InitializeHowtoInstructor();
+                PlayerPrefs.SetInt(instructionsKey, (int)InstructionsState.Seen);
+                PlayerPrefs.Save();
             }
         }
 
@@ -113,10 +131,12 @@ namespace ManoMotion.HowToUse
                 {
                     string canvasObjectName = "InstructionsRunTime";
                     instructionCardBackgroundImage = GameObject.Find(canvasObjectName).GetComponent<Image>();
+
                 }
                 catch (Exception ex)
                 {
                     Debug.LogError(ex);
+
                 }
             }
 
@@ -126,10 +146,12 @@ namespace ManoMotion.HowToUse
                 {
                     string canvasObjectName = "InstructionObject";
                     instructionCanvasText = GameObject.Find(canvasObjectName).GetComponent<Text>();
+
                 }
                 catch (Exception ex)
                 {
                     Debug.LogError(ex);
+
                 }
             }
 
@@ -186,6 +208,7 @@ namespace ManoMotion.HowToUse
             ShouldDisplayInstructions(!displayCard);
             PlaceTextOnCard();
             ShouldShowTriggerAnimationVisuals(!displayCard);
+
         }
 
         /// <summary>
@@ -193,12 +216,13 @@ namespace ManoMotion.HowToUse
         /// </summary>
         private void ProgressWithNextInstruction()
         {
+
             displayCard = true;
             ShouldDisplayCard(displayCard);
             ShouldDisplayInstructions(!displayCard);
             PlaceTextOnCard();
-        }
 
+        }
         /// <summary>
         /// Skips the instructions.
         /// </summary>
@@ -232,9 +256,9 @@ namespace ManoMotion.HowToUse
             {
                 currentInstruction++;
                 ProgressWithNextInstruction();
+
             }
         }
-
         /// <summary>
         /// Shoulds the display card.
         /// </summary>
@@ -243,7 +267,6 @@ namespace ManoMotion.HowToUse
         {
             instructionCardObject.SetActive(state);
         }
-
         /// <summary>
         /// Shoulds the display instructions.
         /// </summary>
@@ -256,7 +279,6 @@ namespace ManoMotion.HowToUse
             confirmationObject.SetActive(state);
             skipInstructionsObject.SetActive(state);
         }
-
         /// <summary>
         /// Places the text on card.
         /// </summary>
@@ -267,8 +289,8 @@ namespace ManoMotion.HowToUse
                 instructionCardText.text = instructions[currentInstruction].GetInstructionCardText();
                 instructionCardTitle.text = instructions[currentInstruction].GetInstructionCardTitle();
             }
-        }
 
+        }
         /// <summary>
         /// Illustrates the current instruction on canvas.
         /// </summary>
@@ -276,8 +298,8 @@ namespace ManoMotion.HowToUse
         {
             HighlightInstructionsBackground();
             instructionCanvasText.text = instructions[currentInstruction].GetInstructionCanvasText();
-        }
 
+        }
         /// <summary>
         /// Updates the current instruction step on canvas.
         /// </summary>
@@ -290,7 +312,6 @@ namespace ManoMotion.HowToUse
 
         bool shouldHighlight;
         public Color dimInstructionColor;
-
         /// <summary>
         /// Highlights the instructions background.
         /// </summary>
@@ -298,8 +319,8 @@ namespace ManoMotion.HowToUse
         {
             shouldHighlight = true;
             instructionCardBackgroundImage.color = Color.white;
-        }
 
+        }
         /// <summary>
         /// Handles the instructions highlight.
         /// </summary>
@@ -316,9 +337,10 @@ namespace ManoMotion.HowToUse
                 {
                     shouldHighlight = false;
                 }
-            }
-        }
 
+            }
+
+        }
         /// <summary>
         /// Ares all instruction finished.
         /// </summary>
@@ -335,7 +357,6 @@ namespace ManoMotion.HowToUse
 
             return true;
         }
-
         /// <summary>
         /// Shows the current instruction on canvas.
         /// </summary>
@@ -347,8 +368,8 @@ namespace ManoMotion.HowToUse
             IllustrateCurrentInstructionOnCanvas();
 
             instructions[currentInstruction].GuideHowTo();
-        }
 
+        }
         public GameObject confirmationHighlightObject;
 
         /// <summary>
@@ -363,7 +384,6 @@ namespace ManoMotion.HowToUse
             confirmationHighlightObject.SetActive(true);
             Handheld.Vibrate();
         }
-
         /// <summary>
         /// Dehighlights the confirmation.
         /// </summary>
@@ -375,7 +395,6 @@ namespace ManoMotion.HowToUse
             }
             confirmationHighlightObject.SetActive(false);
         }
-
         /// <summary>
         /// Closes the how to instructions.
         /// </summary>
@@ -394,3 +413,4 @@ namespace ManoMotion.HowToUse
         }
     }
 }
+

@@ -32,7 +32,6 @@ public class DetectionInstruction : Instruction
     {
         InstructionBehavior();
     }
-
     /// <summary>
     /// How the Instruction should behave to user Input
     /// </summary>
@@ -67,6 +66,7 @@ public class DetectionInstruction : Instruction
                     break;
             }
         }
+
     }
 
     /// <summary>
@@ -79,8 +79,8 @@ public class DetectionInstruction : Instruction
         if (_currentInstructionStep == _instructionSteps - 1)
         {
             ApplicationManager.Instance.howToInstructor.HighlightConfirmation();
-        }
 
+        }
         ApplicationManager.Instance.howToInstructor.UpdateCurrentInstructionStepOnCanvas(this._stepInstructions[_currentInstructionStep]);
     }
 
@@ -94,6 +94,7 @@ public class DetectionInstruction : Instruction
         ApplicationManager.Instance.runTimeApplication.ShouldShowBoundingBox(true);
         ApplicationManager.Instance.runTimeApplication.ShouldShowCursor(true);
         ApplicationManager.Instance.howToInstructor.triggerAnimations.ShouldShowHandOutlineImage(true);
+
     }
 
     override public void StopResponding()
@@ -102,5 +103,8 @@ public class DetectionInstruction : Instruction
         ApplicationManager.Instance.runTimeApplication.ShouldShowBoundingBox(false);
         ApplicationManager.Instance.runTimeApplication.ShouldShowCursor(false);
         ApplicationManager.Instance.howToInstructor.triggerAnimations.ShouldShowHandOutlineImage(false);
+
+
     }
+
 }

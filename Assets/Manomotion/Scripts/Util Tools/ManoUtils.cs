@@ -11,9 +11,6 @@ using UnityEngine.Android;
 
 public class ManoUtils : MonoBehaviour
 {
-    public static Action OnOrientationChanged;
-    public DeviceOrientation currentOrientation;
-
     #region Singleton
     private static ManoUtils instance;
     public static ManoUtils Instance
@@ -24,6 +21,9 @@ public class ManoUtils : MonoBehaviour
         }
     }
     #endregion
+
+    public static Action OnOrientationChanged;
+    public DeviceOrientation currentOrientation;
 
     private Vector3 correction_ratio = Vector3.one;
 
@@ -44,7 +44,7 @@ public class ManoUtils : MonoBehaviour
     /// <param name="Point">Requires a Vector3 point</param>
     /// <param name="depth">Requires the float value of depth</param>
     /// <returns></returns>
-    internal Vector3 CalculateWorldPosition(Vector3 Point, float depth)
+    internal Vector3 CalculateNewPosition(Vector3 Point, float depth)
     {
         if (!cam)
         {
@@ -55,21 +55,8 @@ public class ManoUtils : MonoBehaviour
         correct_point.Scale(correction_ratio);
         correct_point = correct_point + Vector3.one * 0.5f;
         correct_point = new Vector3(Mathf.Clamp(correct_point.x, 0, 1), Mathf.Clamp(correct_point.y, 0, 1), Mathf.Clamp(correct_point.z, 0, 1));
+
         return cam.ViewportToWorldPoint(correct_point + Vector3.forward * depth);
-    }
-
-    internal Vector3 CalculateScreenPosition(Vector3 Point, float depth)
-    {
-        if (!cam)
-        {
-            cam = Camera.main;
-        }
-
-        Vector3 correct_point = Point - Vector3.one * 0.5f;
-        correct_point.Scale(correction_ratio);
-        correct_point = correct_point + Vector3.one * 0.5f;
-        correct_point = new Vector3(Mathf.Clamp(correct_point.x, 0, 1), Mathf.Clamp(correct_point.y, 0, 1), Mathf.Clamp(correct_point.z, 0, 1));
-        return cam.ViewportToScreenPoint(correct_point + Vector3.forward * depth);
     }
 
     /// <summary>
@@ -95,12 +82,6 @@ public class ManoUtils : MonoBehaviour
         float ratio = 1;
         switch (session.orientation)
         {
-            case DeviceOrientation.FaceDown:
-                ratio = (float)ManomotionManager.Instance.Height / ManomotionManager.Instance.Width;
-                break;
-            case DeviceOrientation.FaceUp:
-                ratio = (float)ManomotionManager.Instance.Height / ManomotionManager.Instance.Width;
-                break;
             case DeviceOrientation.Portrait:
                 ratio = (float)ManomotionManager.Instance.Height / ManomotionManager.Instance.Width;
                 break;
@@ -130,12 +111,6 @@ public class ManoUtils : MonoBehaviour
 
         switch (session.orientation)
         {
-            case DeviceOrientation.FaceDown:
-                size = height;
-                break;
-            case DeviceOrientation.FaceUp:
-                size = height;
-                break;
             case DeviceOrientation.Portrait:
                 size = height;
                 break;
@@ -155,6 +130,7 @@ public class ManoUtils : MonoBehaviour
                 size = width / ratio;
                 break;
         }
+
         return size;
     }
 
@@ -162,12 +138,6 @@ public class ManoUtils : MonoBehaviour
     {
         switch (session.orientation)
         {
-            case DeviceOrientation.FaceDown:
-                mesh_renderer.transform.localScale = new Vector3(size, size * ratio, 0f);
-                break;
-            case DeviceOrientation.FaceUp:
-                mesh_renderer.transform.localScale = new Vector3(size, size * ratio, 0f);
-                break;
             case DeviceOrientation.Portrait:
                 mesh_renderer.transform.localScale = new Vector3(size, size * ratio, 0f);
                 break;
@@ -190,18 +160,9 @@ public class ManoUtils : MonoBehaviour
     {
         Vector3 screen_ratio;
         Vector3 image_ratio;
+
         switch (session.orientation)
         {
-            case DeviceOrientation.FaceDown:
-                screen_ratio = new Vector3(((float)Screen.height / Screen.width), 1, 1);
-                image_ratio = new Vector3(ratio, 1, 1);
-                correction_ratio = Vector3.Scale(screen_ratio, image_ratio);
-                break;
-            case DeviceOrientation.FaceUp:
-                screen_ratio = new Vector3(((float)Screen.height / Screen.width), 1, 1);
-                image_ratio = new Vector3(ratio, 1, 1);
-                correction_ratio = Vector3.Scale(screen_ratio, image_ratio);
-                break;
             case DeviceOrientation.Portrait:
                 screen_ratio = new Vector3(((float)Screen.height / Screen.width), 1, 1);
                 image_ratio = new Vector3(ratio, 1, 1);
@@ -281,6 +242,7 @@ public class ManoUtils : MonoBehaviour
         {
             switch (ManomotionManager.Instance.Manomotion_Session.orientation)
             {
+
                 case DeviceOrientation.Portrait:
                     meshRenderer.transform.localRotation = Quaternion.Euler(0, 0, -90);
                     break;
@@ -292,12 +254,6 @@ public class ManoUtils : MonoBehaviour
                     break;
                 case DeviceOrientation.LandscapeRight:
                     meshRenderer.transform.localRotation = Quaternion.Euler(0, 0, 180);
-                    break;
-                case DeviceOrientation.FaceDown:
-                    meshRenderer.transform.localRotation = Quaternion.Euler(0, 0, -90);
-                    break;
-                case DeviceOrientation.FaceUp:
-                    meshRenderer.transform.localRotation = Quaternion.Euler(0, 0, -90);
                     break;
                 case DeviceOrientation.Unknown:
                     meshRenderer.transform.localRotation = Quaternion.Euler(0, 0, -90);

@@ -4,9 +4,6 @@ using UnityEngine;
 using ManoMotion.UI.Buttons;
 public class CategoryManager : MonoBehaviour
 {
-	//Reminder to myself. The issue that I am facing is that the the Category Manager Does not know about the menu on time
-	//Seperate this into a different module maybe
-
 	private static CategoryManager instance;
 	public static CategoryManager Instance
 	{
@@ -21,16 +18,15 @@ public class CategoryManager : MonoBehaviour
 		}
 	}
 
-	[SerializeField]
-	GameObject[] categories;
-
 	public List<UIIconBehavior> uIIconBehaviors = new List<UIIconBehavior>();
 
-	Vector2 categoryPosition;
-	Category previousCategory;
+	[SerializeField]
+	private GameObject[] categories;
+
+	private Vector2 categoryPosition;
+	private Category previousCategory;
 
 	private void Awake()
-
 	{
 		if (instance == null)
 		{
@@ -43,7 +39,6 @@ public class CategoryManager : MonoBehaviour
 		PositionCategories();
 		IconMainMenu.OnOrientationChanged += PositionCategories;
 	}
-
 
 	public void SetupMenu(List<UIIconBehavior.IconFunctionality> listOfFeatures)
 	{
@@ -58,6 +53,7 @@ public class CategoryManager : MonoBehaviour
 		{
 			for (int i = 0; i < listOfFeatures.Count; i++)
 			{
+
 				UIIconBehavior currentIcon = uIIconBehaviors[j];
 				UIIconBehavior.IconFunctionality currentFunctionality = listOfFeatures[i];
 				if (currentIcon.myIconFunctionality == currentFunctionality)
@@ -68,10 +64,10 @@ public class CategoryManager : MonoBehaviour
 		}
 	}
 
-    /// <summary>
-    /// Positions the categories.
-    /// </summary>
-    void PositionCategories()
+	/// <summary>
+	/// Positions the categories.
+	/// </summary>
+	void PositionCategories()
 	{
 		StartCoroutine(PositionCategoriesAfter(0.1f));
 	}
@@ -83,11 +79,9 @@ public class CategoryManager : MonoBehaviour
 	/// <param name="time">Requires a float value of delay.</param>
 	IEnumerator PositionCategoriesAfter(float time)
 	{
-
 		yield return new WaitForSeconds(time);
 		for (int i = 1; i < categories.Length; i++)
 		{
-
 			if (categories[i - 1].GetComponent<Category>())
 			{
 				previousCategory = categories[i - 1].GetComponent<Category>();

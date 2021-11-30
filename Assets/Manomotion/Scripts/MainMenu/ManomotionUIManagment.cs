@@ -4,10 +4,12 @@ using UnityEngine.UI;
 public class ManomotionUIManagment : MonoBehaviour
 {
     private bool _showLicenseInfo;
+
     [SerializeField]
-    Text FPSValueText, processingTimeValueText, versionText, credits, daysLeft, licenseEnd;
+    private Text FPSValueText, processingTimeValueText, versionText, credits, daysLeft, licenseEnd;
+
     [SerializeField]
-    GameObject licenseInfoGizmo;
+    private GameObject licenseInfoGizmo;
 
     private void Awake()
     {
@@ -86,7 +88,7 @@ public class ManomotionUIManagment : MonoBehaviour
     {
         versionText.text = "Version ";
         float versionFull = ManomotionManager.Instance.ManoLicense.version;
-        string prefix = "SDK CE ";
+        string prefix = "AR SDK CE ";
 
         string versionString = versionFull.ToString();
 
@@ -98,10 +100,5 @@ public class ManomotionUIManagment : MonoBehaviour
         int versionLength = versionFull.ToString().Length;
 
         versionText.text = prefix += versionString;
-    }
-
-    private void OnEnable()
-    {
-        HandleManoMotionManagerInitialized();
     }
 }

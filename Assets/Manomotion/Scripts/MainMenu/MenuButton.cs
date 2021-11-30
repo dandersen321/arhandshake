@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+
 public class MenuButton : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject iconsCanvas, manomotionCanvas;
 
     [SerializeField]
-    GameObject iconsCanvas, manomotionCanvas;
-
-    [SerializeField]
-    Sprite menuOpenImage, menuClosedImage;
+    private Sprite menuOpenImage, menuClosedImage;
 
     public Image buttonImage;
 
@@ -31,6 +31,7 @@ public class MenuButton : MonoBehaviour
     void Start()
     {
         buttonImage = this.transform.GetChild(0).gameObject.GetComponent<Image>();
+
         buttonImage.sprite = menuClosedImage;
         _menuIsOpen = false;
     }
