@@ -526,7 +526,7 @@ MonoBehaviour:
   m_MaxNumberOfMovingImages: 4
   m_TrackedImagePrefab: {fileID: 4909953913371499588, guid: 13dd9dde7e9b8ff4d907d3d74367a2d6,
     type: 3}
---- !u!21 &232525432
+--- !u!21 &299497136
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -821,7 +821,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &701756336
 MonoBehaviour:
   m_ObjectHideFlags: 0
