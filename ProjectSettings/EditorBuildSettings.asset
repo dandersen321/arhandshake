@@ -11,9 +11,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/imageTrackingTest2.unity
     guid: cda33efb383bd6a44a5bd0d60efa1282
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/demoPlusSome.unity
     guid: 804c16ffb48ddb6439c1d8fefac315cd
+  - enabled: 1
+    path: Assets/ManoMotion ARFoundation/Examples/Inetraction/Example Interaction.unity
+    guid: 27f43207c9bffcb49bcf1d568179f758
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}
