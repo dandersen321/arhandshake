@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Timers;
 using UnityEngine;
 
 public class EnemyHand : MonoBehaviour
@@ -14,6 +15,10 @@ public class EnemyHand : MonoBehaviour
     private GameObject playerHand;
 
     private bool handshakeStarted = false;
+    private bool grabStarted = false;
+    
+    public float grabCooldown = 0;
+
 
     [SerializeField]
     private Material[] arCubeMaterial;
@@ -41,14 +46,16 @@ public class EnemyHand : MonoBehaviour
     }
 
     private void Update() {
+        grabCooldown -= Time.deltaTime;
         if(handshakeStarted) {
             transform.parent = playerHand.transform;
             if(ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_gesture_trigger == ManoGestureTrigger.RELEASE_GESTURE) {
                 handshakeStarted = false;
+                grabStarted = false;
                 transform.parent = originalParentTransform;
                 //transform.position = originalPosition;
                 cubeRenderer.sharedMaterial = arCubeMaterial[0];
-
+                grabCooldown = 3;
             }
             // if(ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_gesture_continuous == grab) {
             //     transform.parent = playerHand.transform;
@@ -83,18 +90,32 @@ public class EnemyHand : MonoBehaviour
     /// </summary>
     private void MoveWhenGrab(Collider other)
     {
-        
-        if(!handshakeStarted) {
-            cubeRenderer.sharedMaterial = arCubeMaterial[1];
-        
-            if (ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_gesture_continuous == grab)
+
+            if (ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_gesture_continuous == grab && !handshakeStarted && grabCooldown <= 0)
             {
+                grabStarted = true;
+                if(grabStarted) {
+                    handshakeStarted = true;
+                    playerHand = other.gameObject;
+                    cubeRenderer.sharedMaterial = arCubeMaterial[2];
+                }
                 // handshakeStarted = true;
                 // playerHand = other.gameObject;
                 // cubeRenderer.sharedMaterial = arCubeMaterial[2];
                 //transform.parent = other.gameObject.transform;
             }
-        }
+        
+        // if(!handshakeStarted) {
+        //     cubeRenderer.sharedMaterial = arCubeMaterial[1];
+        
+            // if (ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_gesture_continuous == grab)
+            // {
+            //     // handshakeStarted = true;
+            //     // playerHand = other.gameObject;
+            //     // cubeRenderer.sharedMaterial = arCubeMaterial[2];
+            //     //transform.parent = other.gameObject.transform;
+            // }
+        // }
 
         // else
         // {
@@ -138,9 +159,11 @@ public class EnemyHand : MonoBehaviour
             //cubeRenderer.material.SetColor("green", Color.green);
             cubeRenderer.sharedMaterial = arCubeMaterial[1];
             Handheld.Vibrate();
-            handshakeStarted = true;
-            playerHand = other.gameObject;
-            cubeRenderer.sharedMaterial = arCubeMaterial[2];
+            // if(grabStarted) {
+            //     handshakeStarted = true;
+            //     playerHand = other.gameObject;
+            //     cubeRenderer.sharedMaterial = arCubeMaterial[2];
+            // }
         }
     }
 
