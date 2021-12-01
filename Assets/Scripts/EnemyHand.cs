@@ -70,7 +70,7 @@ public class EnemyHand : MonoBehaviour
                 transform.position = transform.parent.position;
                 transform.localPosition = originalLocalPosition;
                 transform.rotation = transform.parent.rotation;
-                cubeRenderer.sharedMaterial = arCubeMaterial[0];
+                //cubeRenderer.sharedMaterial = arCubeMaterial[0];
                 grabCooldown = 1;
             } else {
                 float shakeHeight = 0.1f;
@@ -131,7 +131,7 @@ public class EnemyHand : MonoBehaviour
                 if(grabStarted) {
                     handshakeStarted = true;
                     playerHand = other.gameObject;
-                    cubeRenderer.sharedMaterial = arCubeMaterial[2];
+                    //cubeRenderer.sharedMaterial = arCubeMaterial[2];
                     startY = playerHand.transform.position.y;
                 }
                 // handshakeStarted = true;
@@ -192,7 +192,7 @@ public class EnemyHand : MonoBehaviour
         if (other.gameObject.tag == handTag)
         {
             //cubeRenderer.material.SetColor("green", Color.green);
-            cubeRenderer.sharedMaterial = arCubeMaterial[1];
+            //cubeRenderer.sharedMaterial = arCubeMaterial[1];
             Handheld.Vibrate();
             // if(grabStarted) {
             //     handshakeStarted = true;
@@ -208,7 +208,7 @@ public class EnemyHand : MonoBehaviour
     /// <param name="other">The collider that exits</param>
     private void OnTriggerExit(Collider other)
     {
-        cubeRenderer.sharedMaterial = arCubeMaterial[0];
+        //cubeRenderer.sharedMaterial = arCubeMaterial[0];
         //cubeRenderer.material.SetColor("red", Color.red);
     }
 }
