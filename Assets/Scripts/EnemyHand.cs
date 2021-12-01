@@ -124,7 +124,8 @@ public class EnemyHand : MonoBehaviour
     private void MoveWhenGrab(Collider other)
     {
 
-            if (ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_gesture_continuous == grab && !handshakeStarted && grabCooldown <= 0)
+            //if (ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_gesture_continuous == grab && !handshakeStarted && grabCooldown <= 0)
+            if(!handshakeStarted && grabCooldown <= 0)
             {
                 grabStarted = true;
                 if(grabStarted) {
