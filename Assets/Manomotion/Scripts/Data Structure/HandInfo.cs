@@ -43,6 +43,4 @@ public struct HandInfo
     /// Warnings of conditions that could mean problems on detection
     /// </summary>
     public Warning warning;
-
-    public BoxCollider collider;
 }
