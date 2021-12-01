@@ -51,8 +51,7 @@ public class EnemyHand : MonoBehaviour
         grabCooldown -= Time.deltaTime;
         if(handshakeStarted) {
             transform.parent = playerHand.transform;
-            // || ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_class == ManoClass.NO_HAND
-            if(ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_gesture_trigger == ManoGestureTrigger.RELEASE_GESTURE ) {
+            if(ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_gesture_trigger == ManoGestureTrigger.RELEASE_GESTURE || ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_class == ManoClass.NO_HAND) {
                 handshakeStarted = false;
                 grabStarted = false;
                 transform.parent = originalParentTransform;
