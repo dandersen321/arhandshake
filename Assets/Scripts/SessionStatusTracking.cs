@@ -7,6 +7,12 @@ using UnityEngine;
 public class SessionStatusTracking : MonoBehaviour
 {
 
+    public GameObject enemyHandPrefab;
+
+    private GameObject enemyHandInstance;
+
+    private bool shakingHands = false;
+
     private TMPro.TextMeshProUGUI sessionStatusText;
     private int count = 0;
 
@@ -23,14 +29,23 @@ public class SessionStatusTracking : MonoBehaviour
     {
         if (ManomotionManager.Instance.Hand_infos.Length > 0)
         {
+
            HandInfoUnity handInfoUnity = ManomotionManager.Instance.Hand_infos[0];
            TrackingInfo trackingInfo = handInfoUnity.hand_info.tracking_info;
            GestureInfo gestureInfo = handInfoUnity.hand_info.gesture_info;
             if (gestureInfo.mano_gesture_trigger == ManoGestureTrigger.GRAB_GESTURE)
             {
                 sessionStatusText.text = "Grab" + count++;
+                shakingHands = true;
+                enemyHandInstance = Instantiate(enemyHandPrefab, trackingInfo.palm_center, Quaternion.identity);
+
             } else {
                 sessionStatusText.text = "Nothing -" + gestureInfo.mano_gesture_trigger + count;
+            }
+
+            if(shakingHands) {
+                enemyHandInstance.transform.position = trackingInfo.palm_center;
+                sessionStatusText.text = "Enemy Hand Position " + enemyHandInstance.transform.position;
             }
         } else {
             sessionStatusText.text = "In else";
