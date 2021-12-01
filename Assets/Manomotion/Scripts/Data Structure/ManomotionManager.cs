@@ -310,12 +310,6 @@ public class ManomotionManager : ManomotionBase
             hand_infos[i].hand_info.tracking_info = new TrackingInfo();
             hand_infos[i].hand_info.tracking_info.bounding_box = new BoundingBox();
             hand_infos[i].hand_info.tracking_info.bounding_box.top_left = new Vector3();
-            
-            //apply a box collider to Manomotion hand object
-            hand_infos[i].hand_info.collider = new BoxCollider(){
-                center = hand_infos[i].hand_info.tracking_info.palm_center,
-                size = new Vector3( hand_infos[i].hand_info.tracking_info.bounding_box.width,  hand_infos[i].hand_info.tracking_info.bounding_box.height)
-            };
         }
     }
 
