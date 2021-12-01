@@ -29,6 +29,13 @@ public class EnemyHand : MonoBehaviour
     private string handTag = "Player";
     private Renderer cubeRenderer;
 
+    private TMPro.TextMeshProUGUI textBox;
+
+    private int shakeCount = 0;
+    private bool shakedToTop = false;
+    private bool shakedToBottom = false;
+    private float startY = 0f;
+
     void Start()
     {
         Initialize();
@@ -45,6 +52,7 @@ public class EnemyHand : MonoBehaviour
         originalRotation = this.transform.rotation;
         //cubeRenderer.sharedMaterial = Material.Create("");
         //cubeRenderer.material = arCubeMaterial[0];
+        textBox = GameObject.FindGameObjectWithTag("DisplayText").GetComponent<TMPro.TextMeshProUGUI>();
     }
 
     private void Update() {
@@ -60,6 +68,19 @@ public class EnemyHand : MonoBehaviour
                 transform.rotation = transform.parent.rotation;
                 cubeRenderer.sharedMaterial = arCubeMaterial[0];
                 grabCooldown = 1;
+            } else {
+                float shakeHeight = 0.1f;
+                if(playerHand.transform.position.y - startY > shakeHeight) {
+                    shakedToTop = true;
+                } else if (playerHand.transform.position.y - startY > shakeHeight) {
+                    shakedToBottom = true;
+                }
+
+                if(shakedToBottom && shakedToTop) {
+                    shakeCount +=1;
+                    shakedToBottom = false;
+                    shakedToTop = false;
+                }
             }
             // if(ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_gesture_continuous == grab) {
             //     transform.parent = playerHand.transform;
@@ -75,6 +96,7 @@ public class EnemyHand : MonoBehaviour
             //     handshakeStarted = false;
             // }
         }
+        textBox.text = "Shakes: " + shakeCount + "\nShakeToBottom: " + shakedToBottom + "\nShakeToTop: " + shakedToTop;
     }
 
     /// <summary>
@@ -102,6 +124,7 @@ public class EnemyHand : MonoBehaviour
                     handshakeStarted = true;
                     playerHand = other.gameObject;
                     cubeRenderer.sharedMaterial = arCubeMaterial[2];
+                    startY = playerHand.transform.position.y;
                 }
                 // handshakeStarted = true;
                 // playerHand = other.gameObject;
