@@ -59,7 +59,7 @@ public class EnemyHand : MonoBehaviour
                 transform.localPosition = originalLocalPosition;
                 transform.rotation = transform.parent.rotation;
                 cubeRenderer.sharedMaterial = arCubeMaterial[0];
-                grabCooldown = 3;
+                grabCooldown = 1;
             }
             // if(ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_gesture_continuous == grab) {
             //     transform.parent = playerHand.transform;
