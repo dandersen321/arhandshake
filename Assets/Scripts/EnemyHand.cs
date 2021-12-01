@@ -77,7 +77,7 @@ public class EnemyHand : MonoBehaviour
                 if(playerHand.transform.position.y - startY > shakeHeight) {
                     shakedToTop = true;
                     updateTextBox();
-                } else if (playerHand.transform.position.y - startY > shakeHeight) {
+                } else if ((playerHand.transform.position.y - startY) * -1 > shakeHeight) {
                     shakedToBottom = true;
                     updateTextBox();
                 }
