@@ -10,7 +10,8 @@ public class EnemyHand : MonoBehaviour
     private ManoGestureTrigger click;
 
     private Transform originalParentTransform;
-    private Vector3 originalPosition;
+    private Vector3 originalLocalPosition;
+    private Quaternion originalRotation;
 
     private GameObject playerHand;
 
@@ -40,7 +41,8 @@ public class EnemyHand : MonoBehaviour
         click = ManoGestureTrigger.CLICK;
         cubeRenderer = GetComponent<Renderer>();
         originalParentTransform = this.transform.parent;
-        originalPosition = this.transform.position;
+        originalLocalPosition = this.transform.localPosition;
+        originalRotation = this.transform.rotation;
         //cubeRenderer.sharedMaterial = Material.Create("");
         //cubeRenderer.material = arCubeMaterial[0];
     }
@@ -49,13 +51,15 @@ public class EnemyHand : MonoBehaviour
         grabCooldown -= Time.deltaTime;
         if(handshakeStarted) {
             transform.parent = playerHand.transform;
-            if(ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_gesture_trigger == ManoGestureTrigger.RELEASE_GESTURE) {
+            if(ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_gesture_trigger == ManoGestureTrigger.RELEASE_GESTURE || ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_class == ManoClass.NO_HAND) {
                 handshakeStarted = false;
                 grabStarted = false;
                 transform.parent = originalParentTransform;
-                //transform.position = originalPosition;
+                transform.position = transform.parent.position;
+                transform.localPosition = originalLocalPosition;
+                transform.rotation = transform.parent.rotation;
                 cubeRenderer.sharedMaterial = arCubeMaterial[0];
-                grabCooldown = 3;
+                grabCooldown = 1;
             }
             // if(ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_gesture_continuous == grab) {
             //     transform.parent = playerHand.transform;
