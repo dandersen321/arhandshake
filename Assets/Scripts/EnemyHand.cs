@@ -55,6 +55,10 @@ public class EnemyHand : MonoBehaviour
         textBox = GameObject.FindGameObjectWithTag("DisplayText").GetComponent<TMPro.TextMeshProUGUI>();
     }
 
+    private void updateTextBox() {
+        textBox.text = "Shakes: " + shakeCount + "\nShakeToBottom: " + shakedToBottom + "\nShakeToTop: " + shakedToTop;
+    }
+
     private void Update() {
         grabCooldown -= Time.deltaTime;
         if(handshakeStarted) {
@@ -72,14 +76,17 @@ public class EnemyHand : MonoBehaviour
                 float shakeHeight = 0.1f;
                 if(playerHand.transform.position.y - startY > shakeHeight) {
                     shakedToTop = true;
+                    updateTextBox();
                 } else if (playerHand.transform.position.y - startY > shakeHeight) {
                     shakedToBottom = true;
+                    updateTextBox();
                 }
 
                 if(shakedToBottom && shakedToTop) {
                     shakeCount +=1;
                     shakedToBottom = false;
                     shakedToTop = false;
+                    updateTextBox();
                 }
             }
             // if(ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_gesture_continuous == grab) {
@@ -96,7 +103,7 @@ public class EnemyHand : MonoBehaviour
             //     handshakeStarted = false;
             // }
         }
-        textBox.text = "Shakes: " + shakeCount + "\nShakeToBottom: " + shakedToBottom + "\nShakeToTop: " + shakedToTop;
+        
     }
 
     /// <summary>
