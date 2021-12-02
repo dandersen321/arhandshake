@@ -35,6 +35,8 @@ public class EnemyHand : MonoBehaviour
     private bool shakedToTop = false;
     private bool shakedToBottom = false;
     private float startY = 0f;
+    //private float handSpeed = 0.001f;
+    private float handSpeed = 0.7f;
 
     void Start()
     {
@@ -70,6 +72,8 @@ public class EnemyHand : MonoBehaviour
                 transform.position = transform.parent.position;
                 transform.localPosition = originalLocalPosition;
                 transform.rotation = transform.parent.rotation;
+                //transform.position = Vector3.MoveTowards(transform.position, originalPosition, 30.0f * Time.deltaTime);
+
                 //cubeRenderer.sharedMaterial = arCubeMaterial[0];
                 grabCooldown = 1;
             } else {
@@ -81,13 +85,13 @@ public class EnemyHand : MonoBehaviour
                     shakedToBottom = true;
                     updateTextBox();
                 }
-
                 if(shakedToBottom && shakedToTop) {
                     shakeCount +=1;
                     shakedToBottom = false;
                     shakedToTop = false;
                     updateTextBox();
                 }
+
             }
             // if(ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_gesture_continuous == grab) {
             //     transform.parent = playerHand.transform;
@@ -103,6 +107,16 @@ public class EnemyHand : MonoBehaviour
             //     handshakeStarted = false;
             // }
         }
+
+        if(grabCooldown > 0 || true) {
+            textBox.text = "In Grab Cooldown";
+            //transform.localPosition = Vector3.MoveTowards(transform.localPosition, originalLocalPosition, handSpeed * Time.deltaTime);
+            //transform.position = Vector3.MoveTowards(transform.position, transform.parent.position, handSpeed * Time.deltaTime);
+        }
+
+        // if(playerHand && transform.position != playerHand.transform.position && ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_class != ManoClass.NO_HAND && handshakeStarted){
+        //     transform.position = Vector3.MoveTowards(transform.position, playerHand.transform.position, handSpeed * Time.deltaTime);
+        // }
         
     }
 
@@ -115,6 +129,12 @@ public class EnemyHand : MonoBehaviour
         MoveWhenGrab(other);
         // RotateWhenHolding(other);
         // SpawnWhenClicking(other);
+        if(handshakeStarted) {
+            var yourHandPointOfContact = other.gameObject.transform.GetChild(1);
+            if(transform.position != yourHandPointOfContact.position){
+                transform.position = Vector3.MoveTowards(transform.position, yourHandPointOfContact.transform.position, handSpeed * Time.deltaTime);
+            }
+        }
     }
 
     /// <summary>
