@@ -29,6 +29,13 @@ public class EnemyHand : MonoBehaviour
     private string handTag = "Player";
     private Renderer cubeRenderer;
 
+    private TMPro.TextMeshProUGUI textBox;
+
+    private int shakeCount = 0;
+    private bool shakedToTop = false;
+    private bool shakedToBottom = false;
+    private float startY = 0f;
+
     void Start()
     {
         Initialize();
@@ -45,6 +52,11 @@ public class EnemyHand : MonoBehaviour
         originalRotation = this.transform.rotation;
         //cubeRenderer.sharedMaterial = Material.Create("");
         //cubeRenderer.material = arCubeMaterial[0];
+        textBox = GameObject.FindGameObjectWithTag("DisplayText").GetComponent<TMPro.TextMeshProUGUI>();
+    }
+
+    private void updateTextBox() {
+        textBox.text = "Shakes: " + shakeCount + "\nShakeToBottom: " + shakedToBottom + "\nShakeToTop: " + shakedToTop;
     }
 
     private void Update() {
@@ -58,8 +70,24 @@ public class EnemyHand : MonoBehaviour
                 transform.position = transform.parent.position;
                 transform.localPosition = originalLocalPosition;
                 transform.rotation = transform.parent.rotation;
-                cubeRenderer.sharedMaterial = arCubeMaterial[0];
+                //cubeRenderer.sharedMaterial = arCubeMaterial[0];
                 grabCooldown = 1;
+            } else {
+                float shakeHeight = 0.1f;
+                if(playerHand.transform.position.y - startY > shakeHeight) {
+                    shakedToTop = true;
+                    updateTextBox();
+                } else if ((playerHand.transform.position.y - startY) * -1 > shakeHeight) {
+                    shakedToBottom = true;
+                    updateTextBox();
+                }
+
+                if(shakedToBottom && shakedToTop) {
+                    shakeCount +=1;
+                    shakedToBottom = false;
+                    shakedToTop = false;
+                    updateTextBox();
+                }
             }
             // if(ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_gesture_continuous == grab) {
             //     transform.parent = playerHand.transform;
@@ -75,6 +103,7 @@ public class EnemyHand : MonoBehaviour
             //     handshakeStarted = false;
             // }
         }
+        
     }
 
     /// <summary>
@@ -95,13 +124,15 @@ public class EnemyHand : MonoBehaviour
     private void MoveWhenGrab(Collider other)
     {
 
-            if (ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_gesture_continuous == grab && !handshakeStarted && grabCooldown <= 0)
+            //if (ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_gesture_continuous == grab && !handshakeStarted && grabCooldown <= 0)
+            if(!handshakeStarted && grabCooldown <= 0)
             {
                 grabStarted = true;
                 if(grabStarted) {
                     handshakeStarted = true;
                     playerHand = other.gameObject;
-                    cubeRenderer.sharedMaterial = arCubeMaterial[2];
+                    //cubeRenderer.sharedMaterial = arCubeMaterial[2];
+                    startY = playerHand.transform.position.y;
                 }
                 // handshakeStarted = true;
                 // playerHand = other.gameObject;
@@ -161,7 +192,7 @@ public class EnemyHand : MonoBehaviour
         if (other.gameObject.tag == handTag)
         {
             //cubeRenderer.material.SetColor("green", Color.green);
-            cubeRenderer.sharedMaterial = arCubeMaterial[1];
+            //cubeRenderer.sharedMaterial = arCubeMaterial[1];
             Handheld.Vibrate();
             // if(grabStarted) {
             //     handshakeStarted = true;
@@ -177,7 +208,7 @@ public class EnemyHand : MonoBehaviour
     /// <param name="other">The collider that exits</param>
     private void OnTriggerExit(Collider other)
     {
-        cubeRenderer.sharedMaterial = arCubeMaterial[0];
+        //cubeRenderer.sharedMaterial = arCubeMaterial[0];
         //cubeRenderer.material.SetColor("red", Color.red);
     }
 }
