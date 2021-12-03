@@ -108,11 +108,11 @@ public class EnemyHand : MonoBehaviour
             // }
         }
 
-        if(grabCooldown > 0 || true) {
-            textBox.text = "In Grab Cooldown";
-            //transform.localPosition = Vector3.MoveTowards(transform.localPosition, originalLocalPosition, handSpeed * Time.deltaTime);
-            //transform.position = Vector3.MoveTowards(transform.position, transform.parent.position, handSpeed * Time.deltaTime);
-        }
+        // if(grabCooldown > 0 || true) {
+        //     //textBox.text = "In Grab Cooldown";
+        //     //transform.localPosition = Vector3.MoveTowards(transform.localPosition, originalLocalPosition, handSpeed * Time.deltaTime);
+        //     //transform.position = Vector3.MoveTowards(transform.position, transform.parent.position, handSpeed * Time.deltaTime);
+        // }
 
         // if(playerHand && transform.position != playerHand.transform.position && ManomotionManager.Instance.Hand_infos[0].hand_info.gesture_info.mano_class != ManoClass.NO_HAND && handshakeStarted){
         //     transform.position = Vector3.MoveTowards(transform.position, playerHand.transform.position, handSpeed * Time.deltaTime);
@@ -130,10 +130,10 @@ public class EnemyHand : MonoBehaviour
         // RotateWhenHolding(other);
         // SpawnWhenClicking(other);
         if(handshakeStarted) {
-            var yourHandPointOfContact = other.gameObject.transform.GetChild(1);
-            if(transform.position != yourHandPointOfContact.position){
-                transform.position = Vector3.MoveTowards(transform.position, yourHandPointOfContact.transform.position, handSpeed * Time.deltaTime);
-            }
+            // var yourHandPointOfContact = other.gameObject.transform;
+            // if(transform.position != yourHandPointOfContact.position){
+            //     transform.position = Vector3.MoveTowards(transform.position, yourHandPointOfContact.transform.position, handSpeed * Time.deltaTime);
+            // }
         }
     }
 

@@ -1191,10 +1191,262 @@
       "metadata" : {
         "timeAdded" : "20211202T173442.904402"
       }
+    },
+    {
+      "id" : 40,
+      "src" : "arhandshake - Davian Sandbox - Android - Unity 2021.2.4f1 Personal _DX11_ 2021-12-02 15-10-02(1).mp4",
+      "rect" : [0, 0, 1904, 984],
+      "lastMod" : "20211202T214044",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1181258],
+          "type" : 0,
+          "editRate" : 30000,
+          "trackRect" : [0, 0, 1904, 984],
+          "sampleRate" : "300953/10000",
+          "bitDepth" : 24,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        },
+        {
+          "range" : [0, 1889279],
+          "type" : 2,
+          "editRate" : 48000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "integratedLUFS" : -22.3870716496996,
+          "peakLevel" : 0.983292937278748,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20211202T214237.684103"
+      }
+    },
+    {
+      "id" : 41,
+      "src" : "arHandAttackBlooper.mp4",
+      "rect" : [0, 0, 324, 720],
+      "lastMod" : "20211202T213427",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 3860],
+          "type" : 2,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "integratedLUFS" : -1.79769313486232e+308,
+          "peakLevel" : 0.0,
+          "metaData" : ""
+        },
+        {
+          "range" : [0, 3901],
+          "type" : 0,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 324, 720],
+          "sampleRate" : "46923/1000",
+          "bitDepth" : 24,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20211202T214516.262958"
+      }
+    },
+    {
+      "id" : 42,
+      "src" : "yt1s.com - YOU DIED HD.mp4",
+      "rect" : [0, 0, 1920, 1080],
+      "lastMod" : "20211202T213941",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 9717],
+          "type" : 0,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 1920, 1080],
+          "sampleRate" : "600041/10000",
+          "bitDepth" : 24,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        },
+        {
+          "range" : [0, 9776],
+          "type" : 2,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "integratedLUFS" : -12.5863006198226,
+          "peakLevel" : 0.947509706020355,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20211202T214538.512727"
+      }
+    },
+    {
+      "id" : 43,
+      "src" : "arGreatHandshake (online-video-cutter.com).mp4",
+      "rect" : [0, 0, 324, 720],
+      "lastMod" : "20211203T151256",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 17130],
+          "type" : 2,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "integratedLUFS" : -1.79769313486232e+308,
+          "peakLevel" : 0.0,
+          "metaData" : ""
+        },
+        {
+          "range" : [0, 17234],
+          "type" : 0,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 324, 720],
+          "sampleRate" : "599431/10000",
+          "bitDepth" : 24,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20211203T151400.599772"
+      }
+    },
+    {
+      "id" : 44,
+      "src" : "Narration_Hackathon-AR-Dec-2021 19.m4a",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20211203T151707",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 174846224],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "integratedLUFS" : -1.79769313486232e+308,
+          "peakLevel" : 3.55476440745406e-05,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20211203T151710.228096"
+      }
+    },
+    {
+      "id" : 45,
+      "src" : "Narration_Hackathon-AR-Dec-2021 20.m4a",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20211203T151837",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 162075280],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "integratedLUFS" : -21.1583512634868,
+          "peakLevel" : 0.897801458835602,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20211203T151839.616023"
+      }
+    },
+    {
+      "id" : 46,
+      "src" : "Narration_Hackathon-AR-Dec-2021 21.m4a",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20211203T152140",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 149768672],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "integratedLUFS" : -20.7303041414398,
+          "peakLevel" : 1.00140833854675,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20211203T152141.846145"
+      }
+    },
+    {
+      "id" : 47,
+      "src" : "arLimpFish (online-video-cutter.com).mp4",
+      "rect" : [0, 0, 324, 720],
+      "lastMod" : "20211203T151337",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 5690],
+          "type" : 2,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 48000,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "integratedLUFS" : -1.79769313486232e+308,
+          "peakLevel" : 0.0,
+          "metaData" : ""
+        },
+        {
+          "range" : [0, 5732],
+          "type" : 0,
+          "editRate" : 1000,
+          "trackRect" : [0, 0, 324, 720],
+          "sampleRate" : "481593/10000",
+          "bitDepth" : 24,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20211203T152312.657220"
+      }
     }
   ],
   "timeline" : {
-    "id" : 40,
+    "id" : 48,
     "sceneTrack" : {
       "scenes" : [
         {
@@ -1204,7 +1456,7 @@
                 "trackIndex" : 0,
                 "medias" : [
                   {
-                    "id" : 41,
+                    "id" : 49,
                     "_type" : "Callout",
                     "def" : {
                       "kind" : "remix",
@@ -1217,7 +1469,7 @@
                       },
                       "height" : {
                         "type" : "double",
-                        "defaultValue" : 99.0566037735849,
+                        "defaultValue" : 142.452830188679,
                         "interp" : "linr"
                       },
                       "line-spacing" : {
@@ -1227,7 +1479,7 @@
                       },
                       "width" : {
                         "type" : "double",
-                        "defaultValue" : 577.358490566037,
+                        "defaultValue" : 615.094339622641,
                         "interp" : "linr"
                       },
                       "word-wrap" : {
@@ -1237,7 +1489,7 @@
                       },
                       "horizontal-alignment" : "center",
                       "resize-behavior" : "resizeText",
-                      "text" : "Dylan Andersen  ",
+                      "text" : "Dylan Andersen  \r(he/him/his)",
                       "vertical-alignment" : "center",
                       "font" : {
                         "color-blue" : {
@@ -1274,7 +1526,7 @@
                           {
                             "endTime" : 0,
                             "time" : 0,
-                            "value" : [{"name":"kerning","rangeEnd":16,"rangeStart":0,"value":0,"valueType":"double"},{"name":"fontItalic","rangeEnd":16,"rangeStart":0,"value":0,"valueType":"int"},{"name":"underline","rangeEnd":16,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fgColor","rangeEnd":16,"rangeStart":0,"value":"(255,255,255,255)","valueType":"color"},{"name":"fontName","rangeEnd":16,"rangeStart":0,"value":"Montserrat","valueType":"string"},{"name":"fontSize","rangeEnd":16,"rangeStart":0,"value":96,"valueType":"double"},{"name":"strikethrough","rangeEnd":16,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontWeight","rangeEnd":16,"rangeStart":0,"value":400,"valueType":"int"}],
+                            "value" : [{"name":"fontSize","rangeEnd":29,"rangeStart":0,"value":96,"valueType":"double"},{"name":"kerning","rangeEnd":29,"rangeStart":0,"value":0,"valueType":"double"},{"name":"fontWeight","rangeEnd":29,"rangeStart":0,"value":400,"valueType":"int"},{"name":"fgColor","rangeEnd":29,"rangeStart":0,"value":"(255,255,255,255)","valueType":"color"},{"name":"underline","rangeEnd":29,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontName","rangeEnd":29,"rangeStart":0,"value":"Montserrat","valueType":"string"},{"name":"fontItalic","rangeEnd":29,"rangeStart":0,"value":0,"valueType":"int"},{"name":"strikethrough","rangeEnd":29,"rangeStart":0,"value":0,"valueType":"int"}],
                             "duration" : 0
                           }
                         ]
@@ -1287,12 +1539,12 @@
                     "parameters" : {
                       "translation0" : {
                         "type" : "double",
-                        "defaultValue" : -559.11320754717,
+                        "defaultValue" : -549.547169811321,
                         "interp" : "eioe"
                       },
                       "translation1" : {
                         "type" : "double",
-                        "defaultValue" : -262.735846789378,
+                        "defaultValue" : -284.632072880583,
                         "interp" : "eioe"
                       },
                       "sourceCrop0" : {
@@ -1360,11 +1612,11 @@
                     }
                   },
                   {
-                    "id" : 42,
+                    "id" : 50,
                     "_type" : "UnifiedMedia",
                     "video" : 
                         {
-                          "id" : 43,
+                          "id" : 51,
                           "_type" : "VMFile",
                           "src" : 11,
                           "trackNumber" : 1,
@@ -1442,7 +1694,7 @@
                         },
                     "audio" : 
                         {
-                          "id" : 44,
+                          "id" : 52,
                           "_type" : "AMFile",
                           "src" : 11,
                           "trackNumber" : 0,
@@ -1482,11 +1734,11 @@
                     }
                   },
                   {
-                    "id" : 45,
+                    "id" : 53,
                     "_type" : "UnifiedMedia",
                     "video" : 
                         {
-                          "id" : 46,
+                          "id" : 54,
                           "_type" : "VMFile",
                           "src" : 11,
                           "trackNumber" : 1,
@@ -1564,7 +1816,7 @@
                         },
                     "audio" : 
                         {
-                          "id" : 47,
+                          "id" : 55,
                           "_type" : "AMFile",
                           "src" : 11,
                           "trackNumber" : 0,
@@ -1604,11 +1856,11 @@
                     }
                   },
                   {
-                    "id" : 48,
+                    "id" : 56,
                     "_type" : "UnifiedMedia",
                     "video" : 
                         {
-                          "id" : 49,
+                          "id" : 57,
                           "_type" : "VMFile",
                           "src" : 4,
                           "trackNumber" : 1,
@@ -1681,7 +1933,7 @@
                         },
                     "audio" : 
                         {
-                          "id" : 50,
+                          "id" : 58,
                           "_type" : "AMFile",
                           "src" : 4,
                           "trackNumber" : 0,
@@ -1719,11 +1971,11 @@
                     }
                   },
                   {
-                    "id" : 51,
+                    "id" : 59,
                     "_type" : "UnifiedMedia",
                     "video" : 
                         {
-                          "id" : 52,
+                          "id" : 60,
                           "_type" : "VMFile",
                           "src" : 9,
                           "trackNumber" : 1,
@@ -1796,7 +2048,7 @@
                         },
                     "audio" : 
                         {
-                          "id" : 53,
+                          "id" : 61,
                           "_type" : "AMFile",
                           "src" : 9,
                           "trackNumber" : 0,
@@ -1834,11 +2086,11 @@
                     }
                   },
                   {
-                    "id" : 54,
+                    "id" : 62,
                     "_type" : "UnifiedMedia",
                     "video" : 
                         {
-                          "id" : 55,
+                          "id" : 63,
                           "_type" : "VMFile",
                           "src" : 8,
                           "trackNumber" : 1,
@@ -1911,7 +2163,7 @@
                         },
                     "audio" : 
                         {
-                          "id" : 56,
+                          "id" : 64,
                           "_type" : "AMFile",
                           "src" : 8,
                           "trackNumber" : 0,
@@ -1949,11 +2201,11 @@
                     }
                   },
                   {
-                    "id" : 57,
+                    "id" : 65,
                     "_type" : "UnifiedMedia",
                     "video" : 
                         {
-                          "id" : 58,
+                          "id" : 66,
                           "_type" : "VMFile",
                           "src" : 2,
                           "trackNumber" : 1,
@@ -2026,7 +2278,7 @@
                         },
                     "audio" : 
                         {
-                          "id" : 59,
+                          "id" : 67,
                           "_type" : "AMFile",
                           "src" : 2,
                           "trackNumber" : 0,
@@ -2064,11 +2316,11 @@
                     }
                   },
                   {
-                    "id" : 60,
+                    "id" : 68,
                     "_type" : "UnifiedMedia",
                     "video" : 
                         {
-                          "id" : 61,
+                          "id" : 69,
                           "_type" : "VMFile",
                           "src" : 1,
                           "trackNumber" : 1,
@@ -2141,7 +2393,7 @@
                         },
                     "audio" : 
                         {
-                          "id" : 62,
+                          "id" : 70,
                           "_type" : "AMFile",
                           "src" : 1,
                           "trackNumber" : 0,
@@ -2179,11 +2431,11 @@
                     }
                   },
                   {
-                    "id" : 63,
+                    "id" : 71,
                     "_type" : "UnifiedMedia",
                     "video" : 
                         {
-                          "id" : 64,
+                          "id" : 72,
                           "_type" : "VMFile",
                           "src" : 3,
                           "trackNumber" : 1,
@@ -2266,7 +2518,7 @@
                         },
                     "audio" : 
                         {
-                          "id" : 65,
+                          "id" : 73,
                           "_type" : "AMFile",
                           "src" : 3,
                           "trackNumber" : 0,
@@ -2306,11 +2558,11 @@
                     }
                   },
                   {
-                    "id" : 66,
+                    "id" : 74,
                     "_type" : "UnifiedMedia",
                     "video" : 
                         {
-                          "id" : 67,
+                          "id" : 75,
                           "_type" : "VMFile",
                           "src" : 7,
                           "trackNumber" : 1,
@@ -2383,7 +2635,7 @@
                         },
                     "audio" : 
                         {
-                          "id" : 68,
+                          "id" : 76,
                           "_type" : "AMFile",
                           "src" : 7,
                           "trackNumber" : 0,
@@ -2421,11 +2673,11 @@
                     }
                   },
                   {
-                    "id" : 69,
+                    "id" : 77,
                     "_type" : "UnifiedMedia",
                     "video" : 
                         {
-                          "id" : 70,
+                          "id" : 78,
                           "_type" : "VMFile",
                           "src" : 6,
                           "trackNumber" : 1,
@@ -2498,7 +2750,7 @@
                         },
                     "audio" : 
                         {
-                          "id" : 71,
+                          "id" : 79,
                           "_type" : "AMFile",
                           "src" : 6,
                           "trackNumber" : 0,
@@ -2536,7 +2788,288 @@
                     }
                   },
                   {
-                    "id" : 72,
+                    "id" : 80,
+                    "_type" : "UnifiedMedia",
+                    "video" : 
+                        {
+                          "id" : 81,
+                          "_type" : "VMFile",
+                          "src" : 40,
+                          "trackNumber" : 0,
+                          "attributes" : {
+                            "ident" : "arhandshake - Davian Sandbox - Android - Unity 2021.2.4f1 Personal _DX11_ 2021-12-02 15-10-02(1)"
+                          },
+                          "parameters" : {
+                            "sourceCrop0" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop1" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop2" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop3" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop0" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop1" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop2" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop3" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            }
+                          },
+                          "effects" : [
+
+                          ],
+                          "start" : 5678,
+                          "duration" : 636,
+                          "mediaStart" : 145,
+                          "mediaDuration" : 636,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        },
+                    "audio" : 
+                        {
+                          "id" : 82,
+                          "_type" : "AMFile",
+                          "src" : 40,
+                          "trackNumber" : 1,
+                          "attributes" : {
+                            "ident" : "",
+                            "gain" : 1.0,
+                            "mixToMono" : false,
+                            "loudnessNormalization" : true
+                          },
+                            "channelNumber" : "0,1",
+                          "effects" : [
+
+                          ],
+                          "start" : 5678,
+                          "duration" : 636,
+                          "mediaStart" : 145,
+                          "mediaDuration" : 636,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        }
+,
+                    "start" : 5678,
+                    "duration" : 636,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 2362,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false
+                    }
+                  },
+                  {
+                    "id" : 83,
+                    "_type" : "UnifiedMedia",
+                    "video" : 
+                        {
+                          "id" : 84,
+                          "_type" : "VMFile",
+                          "src" : 41,
+                          "trackNumber" : 1,
+                          "attributes" : {
+                            "ident" : "arHandAttackBlooper"
+                          },
+                          "parameters" : {
+                            "scale0" : {
+                              "type" : "double",
+                              "defaultValue" : 1.5,
+                              "interp" : "eioe"
+                            },
+                            "scale1" : {
+                              "type" : "double",
+                              "defaultValue" : 1.5,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop0" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop1" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop2" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop3" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop0" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop1" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop2" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop3" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            }
+                          },
+                          "effects" : [
+
+                          ],
+                          "start" : 6329,
+                          "duration" : 232,
+                          "mediaStart" : 0,
+                          "mediaDuration" : 232,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        },
+                    "audio" : 
+                        {
+                          "id" : 85,
+                          "_type" : "AMFile",
+                          "src" : 41,
+                          "trackNumber" : 0,
+                          "attributes" : {
+                            "ident" : "",
+                            "gain" : 1.0,
+                            "mixToMono" : false,
+                            "loudnessNormalization" : true
+                          },
+                            "channelNumber" : "0,1",
+                          "effects" : [
+
+                          ],
+                          "start" : 6329,
+                          "duration" : 232,
+                          "mediaStart" : 0,
+                          "mediaDuration" : 232,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        }
+,
+                    "start" : 6329,
+                    "duration" : 232,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 232,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-height" : 720.0,
+                      "default-scale0" : 1.0,
+                      "default-scale1" : 1.0,
+                      "default-width" : 324.0
+                    }
+                  },
+                  {
+                    "id" : 86,
+                    "_type" : "VMFile",
+                    "src" : 42,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "yt1s.com - YOU DIED HD"
+                    },
+                    "parameters" : {
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 6561,
+                    "duration" : 200,
+                    "mediaStart" : 112,
+                    "mediaDuration" : 200,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 87,
                     "_type" : "StitchedMedia",
                     "minMediaStart" : 0,
                     "attributes" : {
@@ -2608,11 +3141,11 @@
                     },
                     "medias" : [
                         {
-                          "id" : 73,
+                          "id" : 88,
                           "_type" : "UnifiedMedia",
                           "video" : 
                               {
-                                "id" : 74,
+                                "id" : 89,
                                 "_type" : "VMFile",
                                 "src" : 5,
                                 "trackNumber" : 1,
@@ -2675,7 +3208,7 @@
                               },
                           "audio" : 
                               {
-                                "id" : 75,
+                                "id" : 90,
                                 "_type" : "AMFile",
                                 "src" : 5,
                                 "trackNumber" : 0,
@@ -2715,7 +3248,7 @@
                           }
                         },
                         {
-                          "id" : 76,
+                          "id" : 91,
                           "_type" : "IMFile",
                           "src" : 5,
                           "trackNumber" : 1,
@@ -2781,7 +3314,7 @@
                     "effects" : [
 
                     ],
-                    "start" : 5678,
+                    "start" : 6761,
                     "duration" : 460,
                     "mediaStart" : 0,
                     "mediaDuration" : 460,
@@ -2804,11 +3337,11 @@
                     }
                   },
                   {
-                    "id" : 77,
+                    "id" : 92,
                     "_type" : "StitchedMedia",
-                    "minMediaStart" : -2.54016e+12,
+                    "minMediaStart" : 0,
                     "attributes" : {
-                      "ident" : "arFinalResult (online-video-cutter.com)",
+                      "ident" : "arGreatHandshake (online-video-cutter.com)",
                       "gain" : 1.0,
                       "mixToMono" : false,
                       "loudnessNormalization" : true
@@ -2830,79 +3363,16 @@
                     },
                     "medias" : [
                         {
-                          "id" : 78,
-                          "_type" : "IMFile",
-                          "src" : 32,
-                          "trackNumber" : 1,
-                          "trimStartSum" : -2540160000000,
-                          "attributes" : {
-                            "ident" : "arFinalResult (online-video-cutter.com)"
-                          },
-                          "parameters" : {
-                            "sourceCrop0" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "sourceCrop1" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "sourceCrop2" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "sourceCrop3" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "geometryCrop0" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "geometryCrop1" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "geometryCrop2" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "geometryCrop3" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            }
-                          },
-                          "effects" : [
-
-                          ],
-                          "start" : -2540160000000,
-                          "duration" : 2540160000060,
-                          "mediaStart" : 0,
-                          "mediaDuration" : 1,
-                          "scalar" : 1,
-                          "animationTracks" : {
-
-                          }
-                        },
-                        {
-                          "id" : 79,
+                          "id" : 93,
                           "_type" : "UnifiedMedia",
                           "video" : 
                               {
-                                "id" : 80,
+                                "id" : 94,
                                 "_type" : "VMFile",
-                                "src" : 32,
+                                "src" : 43,
                                 "trackNumber" : 1,
                                 "attributes" : {
-                                  "ident" : "arFinalResult (online-video-cutter.com)"
+                                  "ident" : "arGreatHandshake (online-video-cutter.com)"
                                 },
                                 "parameters" : {
                                   "sourceCrop0" : {
@@ -2949,10 +3419,10 @@
                                 "effects" : [
 
                                 ],
-                                "start" : 60,
-                                "duration" : 1135,
+                                "start" : 0,
+                                "duration" : 12,
                                 "mediaStart" : 0,
-                                "mediaDuration" : 1135,
+                                "mediaDuration" : 12,
                                 "scalar" : 1,
                                 "animationTracks" : {
 
@@ -2960,9 +3430,9 @@
                               },
                           "audio" : 
                               {
-                                "id" : 81,
+                                "id" : 95,
                                 "_type" : "AMFile",
-                                "src" : 32,
+                                "src" : 43,
                                 "trackNumber" : 0,
                                 "attributes" : {
                                   "ident" : "",
@@ -2974,20 +3444,20 @@
                                 "effects" : [
 
                                 ],
-                                "start" : 60,
-                                "duration" : 1135,
+                                "start" : 0,
+                                "duration" : 12,
                                 "mediaStart" : 0,
-                                "mediaDuration" : 1135,
+                                "mediaDuration" : 12,
                                 "scalar" : 1,
                                 "animationTracks" : {
 
                                 }
                               }
 ,
-                          "start" : 60,
-                          "duration" : 1135,
+                          "start" : 0,
+                          "duration" : 12,
                           "mediaStart" : 0,
-                          "mediaDuration" : 1135,
+                          "mediaDuration" : 1027,
                           "scalar" : 1,
                           "metadata" : {
                             "clipSpeedAttribute" : false,
@@ -2996,46 +3466,17 @@
                             "default-scale1" : 1.0,
                             "default-width" : 324.0
                           }
-                        }
-                    ],
-                    "effects" : [
-
-                    ],
-                    "start" : 6139,
-                    "duration" : 69,
-                    "mediaStart" : 0,
-                    "mediaDuration" : 69,
-                    "scalar" : 1,
-                    "metadata" : {
-                      "clipSpeedAttribute" : false
-                    },
-                    "animationTracks" : {
-
-                    }
-                  },
-                  {
-                    "id" : 82,
-                    "_type" : "UnifiedMedia",
-                    "video" : 
+                        },
                         {
-                          "id" : 83,
-                          "_type" : "VMFile",
-                          "src" : 32,
+                          "id" : 96,
+                          "_type" : "IMFile",
+                          "src" : 43,
                           "trackNumber" : 1,
+                          "trimStartSum" : 0,
                           "attributes" : {
-                            "ident" : "arFinalResult (online-video-cutter.com)"
+                            "ident" : "arGreatHandshake (online-video-cutter.com)"
                           },
                           "parameters" : {
-                            "scale0" : {
-                              "type" : "double",
-                              "defaultValue" : 1.5,
-                              "interp" : "eioe"
-                            },
-                            "scale1" : {
-                              "type" : "double",
-                              "defaultValue" : 1.5,
-                              "interp" : "eioe"
-                            },
                             "sourceCrop0" : {
                               "type" : "double",
                               "defaultValue" : 0.0,
@@ -3080,56 +3521,138 @@
                           "effects" : [
 
                           ],
-                          "start" : 6208,
-                          "duration" : 1135,
-                          "mediaStart" : 0,
-                          "mediaDuration" : 1135,
+                          "start" : 12,
+                          "duration" : 60,
+                          "mediaStart" : 11,
+                          "mediaDuration" : 1,
                           "scalar" : 1,
                           "animationTracks" : {
 
                           }
                         },
-                    "audio" : 
                         {
-                          "id" : 84,
-                          "_type" : "AMFile",
-                          "src" : 32,
-                          "trackNumber" : 0,
-                          "attributes" : {
-                            "ident" : "",
-                            "gain" : 1.0,
-                            "mixToMono" : false,
-                            "loudnessNormalization" : true
-                          },
-                            "channelNumber" : "0,1",
-                          "effects" : [
+                          "id" : 97,
+                          "_type" : "UnifiedMedia",
+                          "video" : 
+                              {
+                                "id" : 98,
+                                "_type" : "VMFile",
+                                "src" : 43,
+                                "trackNumber" : 1,
+                                "attributes" : {
+                                  "ident" : "arGreatHandshake (online-video-cutter.com)"
+                                },
+                                "parameters" : {
+                                  "sourceCrop0" : {
+                                    "type" : "double",
+                                    "defaultValue" : 0.0,
+                                    "interp" : "eioe"
+                                  },
+                                  "sourceCrop1" : {
+                                    "type" : "double",
+                                    "defaultValue" : 0.0,
+                                    "interp" : "eioe"
+                                  },
+                                  "sourceCrop2" : {
+                                    "type" : "double",
+                                    "defaultValue" : 0.0,
+                                    "interp" : "eioe"
+                                  },
+                                  "sourceCrop3" : {
+                                    "type" : "double",
+                                    "defaultValue" : 0.0,
+                                    "interp" : "eioe"
+                                  },
+                                  "geometryCrop0" : {
+                                    "type" : "double",
+                                    "defaultValue" : 0.0,
+                                    "interp" : "eioe"
+                                  },
+                                  "geometryCrop1" : {
+                                    "type" : "double",
+                                    "defaultValue" : 0.0,
+                                    "interp" : "eioe"
+                                  },
+                                  "geometryCrop2" : {
+                                    "type" : "double",
+                                    "defaultValue" : 0.0,
+                                    "interp" : "eioe"
+                                  },
+                                  "geometryCrop3" : {
+                                    "type" : "double",
+                                    "defaultValue" : 0.0,
+                                    "interp" : "eioe"
+                                  }
+                                },
+                                "effects" : [
 
-                          ],
-                          "start" : 6208,
-                          "duration" : 1135,
+                                ],
+                                "start" : 72,
+                                "duration" : 1015,
+                                "mediaStart" : 12,
+                                "mediaDuration" : 1015,
+                                "scalar" : 1,
+                                "animationTracks" : {
+
+                                }
+                              },
+                          "audio" : 
+                              {
+                                "id" : 99,
+                                "_type" : "AMFile",
+                                "src" : 43,
+                                "trackNumber" : 0,
+                                "attributes" : {
+                                  "ident" : "",
+                                  "gain" : 1.0,
+                                  "mixToMono" : false,
+                                  "loudnessNormalization" : true
+                                },
+                                  "channelNumber" : "0,1",
+                                "effects" : [
+
+                                ],
+                                "start" : 72,
+                                "duration" : 1015,
+                                "mediaStart" : 12,
+                                "mediaDuration" : 1015,
+                                "scalar" : 1,
+                                "animationTracks" : {
+
+                                }
+                              }
+,
+                          "start" : 72,
+                          "duration" : 1015,
                           "mediaStart" : 0,
-                          "mediaDuration" : 1135,
+                          "mediaDuration" : 1027,
                           "scalar" : 1,
-                          "animationTracks" : {
-
+                          "metadata" : {
+                            "clipSpeedAttribute" : false,
+                            "default-height" : 720.0,
+                            "default-scale0" : 1.0,
+                            "default-scale1" : 1.0,
+                            "default-width" : 324.0
                           }
                         }
-,
-                    "start" : 6208,
-                    "duration" : 1135,
+                    ],
+                    "effects" : [
+
+                    ],
+                    "start" : 7221,
+                    "duration" : 1087,
                     "mediaStart" : 0,
-                    "mediaDuration" : 1135,
+                    "mediaDuration" : 1087,
                     "scalar" : 1,
                     "metadata" : {
-                      "clipSpeedAttribute" : false,
-                      "default-height" : 720.0,
-                      "default-scale0" : 1.0,
-                      "default-scale1" : 1.0,
-                      "default-width" : 324.0
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
                     }
                   },
                   {
-                    "id" : 85,
+                    "id" : 100,
                     "_type" : "Callout",
                     "def" : {
                       "kind" : "remix",
@@ -3184,7 +3707,7 @@
                     "effects" : [
 
                     ],
-                    "start" : 7343,
+                    "start" : 8323,
                     "duration" : 420,
                     "mediaStart" : 0,
                     "mediaDuration" : 420,
@@ -3205,11 +3728,11 @@
                     }
                   },
                   {
-                    "id" : 86,
+                    "id" : 101,
                     "_type" : "UnifiedMedia",
                     "video" : 
                         {
-                          "id" : 87,
+                          "id" : 102,
                           "_type" : "VMFile",
                           "src" : 12,
                           "trackNumber" : 1,
@@ -3271,7 +3794,7 @@
                           "effects" : [
 
                           ],
-                          "start" : 7763,
+                          "start" : 8743,
                           "duration" : 604,
                           "mediaStart" : 0,
                           "mediaDuration" : 604,
@@ -3282,7 +3805,7 @@
                         },
                     "audio" : 
                         {
-                          "id" : 88,
+                          "id" : 103,
                           "_type" : "AMFile",
                           "src" : 12,
                           "trackNumber" : 0,
@@ -3327,7 +3850,7 @@
                           "effects" : [
 
                           ],
-                          "start" : 7763,
+                          "start" : 8743,
                           "duration" : 604,
                           "mediaStart" : 0,
                           "mediaDuration" : 604,
@@ -3337,7 +3860,7 @@
                           }
                         }
 ,
-                    "start" : 7763,
+                    "start" : 8743,
                     "duration" : 604,
                     "mediaStart" : 0,
                     "mediaDuration" : 604,
@@ -3351,7 +3874,7 @@
                     }
                   },
                   {
-                    "id" : 89,
+                    "id" : 104,
                     "_type" : "StitchedMedia",
                     "minMediaStart" : 0,
                     "attributes" : {
@@ -3423,11 +3946,11 @@
                     },
                     "medias" : [
                         {
-                          "id" : 90,
+                          "id" : 105,
                           "_type" : "UnifiedMedia",
                           "video" : 
                               {
-                                "id" : 91,
+                                "id" : 106,
                                 "_type" : "VMFile",
                                 "src" : 13,
                                 "trackNumber" : 0,
@@ -3490,7 +4013,7 @@
                               },
                           "audio" : 
                               {
-                                "id" : 92,
+                                "id" : 107,
                                 "_type" : "AMFile",
                                 "src" : 13,
                                 "trackNumber" : 1,
@@ -3524,7 +4047,7 @@
                           }
                         },
                         {
-                          "id" : 93,
+                          "id" : 108,
                           "_type" : "IMFile",
                           "src" : 13,
                           "trackNumber" : 0,
@@ -3587,11 +4110,11 @@
                           }
                         },
                         {
-                          "id" : 94,
+                          "id" : 109,
                           "_type" : "UnifiedMedia",
                           "video" : 
                               {
-                                "id" : 95,
+                                "id" : 110,
                                 "_type" : "VMFile",
                                 "src" : 13,
                                 "trackNumber" : 0,
@@ -3654,7 +4177,7 @@
                               },
                           "audio" : 
                               {
-                                "id" : 96,
+                                "id" : 111,
                                 "_type" : "AMFile",
                                 "src" : 13,
                                 "trackNumber" : 1,
@@ -3688,7 +4211,7 @@
                           }
                         },
                         {
-                          "id" : 97,
+                          "id" : 112,
                           "_type" : "IMFile",
                           "src" : 13,
                           "trackNumber" : 0,
@@ -3751,11 +4274,11 @@
                           }
                         },
                         {
-                          "id" : 98,
+                          "id" : 113,
                           "_type" : "UnifiedMedia",
                           "video" : 
                               {
-                                "id" : 99,
+                                "id" : 114,
                                 "_type" : "VMFile",
                                 "src" : 13,
                                 "trackNumber" : 0,
@@ -3818,7 +4341,7 @@
                               },
                           "audio" : 
                               {
-                                "id" : 100,
+                                "id" : 115,
                                 "_type" : "AMFile",
                                 "src" : 13,
                                 "trackNumber" : 1,
@@ -3855,7 +4378,7 @@
                     "effects" : [
 
                     ],
-                    "start" : 8367,
+                    "start" : 9347,
                     "duration" : 1018,
                     "mediaStart" : "365859/1031",
                     "mediaDuration" : "781644/1031",
@@ -3872,20 +4395,20 @@
                     }
                   },
                   {
-                    "id" : 101,
+                    "id" : 116,
                     "_type" : "Callout",
                     "def" : {
                       "kind" : "remix",
                       "shape" : "text",
                       "style" : "basic",
                       "enable-ligatures" : 1.0,
-                      "height" : 950.0,
+                      "height" : 944.339622641509,
                       "line-spacing" : 0.0,
-                      "width" : 1133.96226415094,
+                      "width" : 1700.0,
                       "word-wrap" : 1.0,
                       "horizontal-alignment" : "center",
                       "resize-behavior" : "resizeText",
-                      "text" : "Credits:\r- Dylan Andersen\r- Davian Flores\r\rNo Animals were harmed in the making of this film ",
+                      "text" : "Credits\rDylan Andersen (he/him/his)\rDavian Flores (they/them/theirs)\rVin the Cat\r\rNo animals were harmed in the making of this film ",
                       "vertical-alignment" : "center",
                       "font" : {
                         "color-blue" : 1.0,
@@ -3902,7 +4425,7 @@
                           {
                             "endTime" : 0,
                             "time" : 0,
-                            "value" : [{"name":"underline","rangeEnd":93,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontName","rangeEnd":93,"rangeStart":0,"value":"Montserrat","valueType":"string"},{"name":"fontSize","rangeEnd":93,"rangeStart":0,"value":96,"valueType":"double"},{"name":"strikethrough","rangeEnd":93,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontItalic","rangeEnd":93,"rangeStart":0,"value":0,"valueType":"int"},{"name":"kerning","rangeEnd":93,"rangeStart":0,"value":0,"valueType":"double"},{"name":"fgColor","rangeEnd":93,"rangeStart":0,"value":"(255,255,255,255)","valueType":"color"},{"name":"fontWeight","rangeEnd":93,"rangeStart":0,"value":400,"valueType":"int"}],
+                            "value" : [{"name":"fontSize","rangeEnd":132,"rangeStart":0,"value":96,"valueType":"double"},{"name":"kerning","rangeEnd":132,"rangeStart":0,"value":0,"valueType":"double"},{"name":"strikethrough","rangeEnd":132,"rangeStart":0,"value":0,"valueType":"int"},{"name":"underline","rangeEnd":8,"rangeStart":0,"value":1,"valueType":"int"},{"name":"underline","rangeEnd":132,"rangeStart":8,"value":0,"valueType":"int"},{"name":"fontWeight","rangeEnd":132,"rangeStart":0,"value":400,"valueType":"int"},{"name":"fgColor","rangeEnd":132,"rangeStart":0,"value":"(255,255,255,255)","valueType":"color"},{"name":"fontItalic","rangeEnd":132,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontName","rangeEnd":132,"rangeStart":0,"value":"Montserrat","valueType":"string"}],
                             "duration" : 0
                           }
                         ]
@@ -3913,8 +4436,8 @@
                       "autoRotateText" : true
                     },
                     "parameters" : {
-                      "translation0" : -46.2075471698111,
-                      "translation1" : 9.59232693276135e-14,
+                      "translation0" : 2.1316282072803e-13,
+                      "translation1" : 0.330188679245378,
                       "sourceCrop0" : 0.0,
                       "sourceCrop1" : 0.0,
                       "sourceCrop2" : 0.0,
@@ -3927,10 +4450,10 @@
                     "effects" : [
 
                     ],
-                    "start" : 9385,
-                    "duration" : 300,
+                    "start" : 10365,
+                    "duration" : 476,
                     "mediaStart" : 0,
-                    "mediaDuration" : 300,
+                    "mediaDuration" : 476,
                     "scalar" : 1,
                     "metadata" : {
                       "clipSpeedAttribute" : false,
@@ -3950,9 +4473,23 @@
                 ],
                 "transitions" : [
                   {
-                    "name" : "BarWipe",
+                    "name" : "AnimatedMosaic",
                     "duration" : 60,
-                    "rightMedia" : 45,
+                    "rightMedia" : 49,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Blinds",
+                    "duration" : 30,
+                    "leftMedia" : 49,
+                    "rightMedia" : 50,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -3965,7 +4502,7 @@
                   {
                     "name" : "BarWipe",
                     "duration" : 60,
-                    "rightMedia" : 48,
+                    "rightMedia" : 53,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -3978,7 +4515,7 @@
                   {
                     "name" : "BarWipe",
                     "duration" : 60,
-                    "rightMedia" : 51,
+                    "rightMedia" : 56,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -3991,7 +4528,7 @@
                   {
                     "name" : "BarWipe",
                     "duration" : 60,
-                    "rightMedia" : 54,
+                    "rightMedia" : 59,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -4004,7 +4541,7 @@
                   {
                     "name" : "BarWipe",
                     "duration" : 60,
-                    "rightMedia" : 57,
+                    "rightMedia" : 62,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -4017,7 +4554,7 @@
                   {
                     "name" : "BarWipe",
                     "duration" : 60,
-                    "rightMedia" : 60,
+                    "rightMedia" : 65,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -4030,7 +4567,7 @@
                   {
                     "name" : "BarWipe",
                     "duration" : 60,
-                    "rightMedia" : 63,
+                    "rightMedia" : 68,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -4043,7 +4580,7 @@
                   {
                     "name" : "BarWipe",
                     "duration" : 60,
-                    "rightMedia" : 66,
+                    "rightMedia" : 71,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -4056,7 +4593,7 @@
                   {
                     "name" : "BarWipe",
                     "duration" : 60,
-                    "rightMedia" : 69,
+                    "rightMedia" : 74,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -4069,7 +4606,7 @@
                   {
                     "name" : "BarWipe",
                     "duration" : 60,
-                    "rightMedia" : 72,
+                    "rightMedia" : 77,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -4082,7 +4619,7 @@
                   {
                     "name" : "BarWipe",
                     "duration" : 60,
-                    "rightMedia" : 86,
+                    "rightMedia" : 87,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -4095,7 +4632,20 @@
                   {
                     "name" : "BarWipe",
                     "duration" : 60,
-                    "rightMedia" : 89,
+                    "rightMedia" : 101,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "BarWipe",
+                    "duration" : 60,
+                    "rightMedia" : 104,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -4111,7 +4661,7 @@
                 "trackIndex" : 1,
                 "medias" : [
                   {
-                    "id" : 102,
+                    "id" : 117,
                     "_type" : "AMFile",
                     "src" : 37,
                     "trackNumber" : 0,
@@ -4138,7 +4688,7 @@
                     }
                   },
                   {
-                    "id" : 103,
+                    "id" : 118,
                     "_type" : "AMFile",
                     "src" : 38,
                     "trackNumber" : 1,
@@ -4153,9 +4703,9 @@
 
                     ],
                     "start" : 816,
-                    "duration" : 200,
+                    "duration" : 178,
                     "mediaStart" : 694,
-                    "mediaDuration" : 200,
+                    "mediaDuration" : 178,
                     "scalar" : 1,
                     "metadata" : {
                       "clipSpeedAttribute" : false
@@ -4165,7 +4715,7 @@
                     }
                   },
                   {
-                    "id" : 104,
+                    "id" : 119,
                     "_type" : "AMFile",
                     "src" : 17,
                     "trackNumber" : 0,
@@ -4192,11 +4742,11 @@
                     }
                   },
                   {
-                    "id" : 105,
+                    "id" : 120,
                     "_type" : "UnifiedMedia",
                     "video" : 
                         {
-                          "id" : 106,
+                          "id" : 121,
                           "_type" : "VMFile",
                           "src" : 10,
                           "trackNumber" : 1,
@@ -4274,7 +4824,7 @@
                         },
                     "audio" : 
                         {
-                          "id" : 107,
+                          "id" : 122,
                           "_type" : "AMFile",
                           "src" : 10,
                           "trackNumber" : 0,
@@ -4313,7 +4863,7 @@
                     }
                   },
                   {
-                    "id" : 108,
+                    "id" : 123,
                     "_type" : "AMFile",
                     "src" : 20,
                     "trackNumber" : 0,
@@ -4340,7 +4890,7 @@
                     }
                   },
                   {
-                    "id" : 109,
+                    "id" : 124,
                     "_type" : "AMFile",
                     "src" : 21,
                     "trackNumber" : 0,
@@ -4367,7 +4917,7 @@
                     }
                   },
                   {
-                    "id" : 110,
+                    "id" : 125,
                     "_type" : "AMFile",
                     "src" : 23,
                     "trackNumber" : 0,
@@ -4397,7 +4947,7 @@
                     }
                   },
                   {
-                    "id" : 111,
+                    "id" : 126,
                     "_type" : "AMFile",
                     "src" : 25,
                     "trackNumber" : 0,
@@ -4424,7 +4974,7 @@
                     }
                   },
                   {
-                    "id" : 112,
+                    "id" : 127,
                     "_type" : "AMFile",
                     "src" : 26,
                     "trackNumber" : 0,
@@ -4451,7 +5001,7 @@
                     }
                   },
                   {
-                    "id" : 113,
+                    "id" : 128,
                     "_type" : "AMFile",
                     "src" : 27,
                     "trackNumber" : 0,
@@ -4478,7 +5028,7 @@
                     }
                   },
                   {
-                    "id" : 114,
+                    "id" : 129,
                     "_type" : "AMFile",
                     "src" : 28,
                     "trackNumber" : 0,
@@ -4505,7 +5055,7 @@
                     }
                   },
                   {
-                    "id" : 115,
+                    "id" : 130,
                     "_type" : "AMFile",
                     "src" : 30,
                     "trackNumber" : 0,
@@ -4532,7 +5082,34 @@
                     }
                   },
                   {
-                    "id" : 116,
+                    "id" : 131,
+                    "_type" : "AMFile",
+                    "src" : 42,
+                    "trackNumber" : 1,
+                    "attributes" : {
+                      "ident" : "yt1s.com - YOU DIED HD",
+                      "gain" : 1.0,
+                      "mixToMono" : false,
+                      "loudnessNormalization" : true
+                    },
+                      "channelNumber" : "0,1",
+                    "effects" : [
+
+                    ],
+                    "start" : 6561,
+                    "duration" : 200,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 200,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 132,
                     "_type" : "AMFile",
                     "src" : 31,
                     "trackNumber" : 0,
@@ -4546,7 +5123,7 @@
                     "effects" : [
 
                     ],
-                    "start" : 5683,
+                    "start" : 6766,
                     "duration" : 405,
                     "mediaStart" : 0,
                     "mediaDuration" : 405,
@@ -4559,12 +5136,12 @@
                     }
                   },
                   {
-                    "id" : 117,
+                    "id" : 133,
                     "_type" : "AMFile",
-                    "src" : 33,
+                    "src" : 46,
                     "trackNumber" : 0,
                     "attributes" : {
-                      "ident" : "Narration_Hackathon-AR-Dec-2021 16",
+                      "ident" : "Narration_Hackathon-AR-Dec-2021 21",
                       "gain" : 1.0,
                       "mixToMono" : false,
                       "loudnessNormalization" : true
@@ -4573,10 +5150,10 @@
                     "effects" : [
 
                     ],
-                    "start" : 6096,
-                    "duration" : 933,
+                    "start" : 7207,
+                    "duration" : 807,
                     "mediaStart" : 0,
-                    "mediaDuration" : 933,
+                    "mediaDuration" : 807,
                     "scalar" : 1,
                     "metadata" : {
                       "clipSpeedAttribute" : false
@@ -4586,7 +5163,34 @@
                     }
                   },
                   {
-                    "id" : 118,
+                    "id" : 134,
+                    "_type" : "AMFile",
+                    "src" : 35,
+                    "trackNumber" : 1,
+                    "attributes" : {
+                      "ident" : "yt1s.com -  Taylor Swift   Shake it off Lyrics_v720P",
+                      "gain" : 1.0,
+                      "mixToMono" : false,
+                      "loudnessNormalization" : true
+                    },
+                      "channelNumber" : "0,1",
+                    "effects" : [
+
+                    ],
+                    "start" : 8014,
+                    "duration" : 311,
+                    "mediaStart" : 2972,
+                    "mediaDuration" : 311,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 135,
                     "_type" : "AMFile",
                     "src" : 36,
                     "trackNumber" : 0,
@@ -4600,7 +5204,7 @@
                     "effects" : [
 
                     ],
-                    "start" : 7345,
+                    "start" : 8325,
                     "duration" : 418,
                     "mediaStart" : 0,
                     "mediaDuration" : 418,
@@ -4613,11 +5217,313 @@
                     }
                   },
                   {
-                    "id" : 119,
+                    "id" : 136,
+                    "_type" : "Callout",
+                    "def" : {
+                      "kind" : "remix",
+                      "shape" : "thought-bubble",
+                      "style" : "abstract",
+                      "enable-ligatures" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "fill-color-blue" : {
+                        "type" : "double",
+                        "defaultValue" : 0.615686274509804,
+                        "interp" : "linr"
+                      },
+                      "fill-color-green" : {
+                        "type" : "double",
+                        "defaultValue" : 0.647058823529412,
+                        "interp" : "linr"
+                      },
+                      "fill-color-opacity" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "fill-color-red" : {
+                        "type" : "double",
+                        "defaultValue" : 0.337254901960784,
+                        "interp" : "linr"
+                      },
+                      "height" : {
+                        "type" : "double",
+                        "defaultValue" : 203.77358490566,
+                        "interp" : "linr"
+                      },
+                      "line-spacing" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "linr"
+                      },
+                      "stroke-color-blue" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "stroke-color-green" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "stroke-color-opacity" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "stroke-color-red" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "stroke-width" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "linr"
+                      },
+                      "tail-x" : {
+                        "type" : "double",
+                        "defaultValue" : -239.811320754717,
+                        "interp" : "linr"
+                      },
+                      "tail-y" : {
+                        "type" : "double",
+                        "defaultValue" : -118.11320754717,
+                        "interp" : "linr"
+                      },
+                      "width" : {
+                        "type" : "double",
+                        "defaultValue" : 303.77358490566,
+                        "interp" : "linr"
+                      },
+                      "word-wrap" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "fill-style" : "solid",
+                      "horizontal-alignment" : "center",
+                      "resize-behavior" : "resizeText",
+                      "stroke-style" : "solid",
+                      "text" : "Without Handshake App",
+                      "vertical-alignment" : "center",
+                      "font" : {
+                        "color-blue" : {
+                          "type" : "double",
+                          "defaultValue" : 1.0,
+                          "interp" : "linr"
+                        },
+                        "color-green" : {
+                          "type" : "double",
+                          "defaultValue" : 1.0,
+                          "interp" : "linr"
+                        },
+                        "color-red" : {
+                          "type" : "double",
+                          "defaultValue" : 1.0,
+                          "interp" : "linr"
+                        },
+                        "size" : {
+                          "type" : "double",
+                          "defaultValue" : 64.0,
+                          "interp" : "linr"
+                        },
+                        "tracking" : {
+                          "type" : "double",
+                          "defaultValue" : 0.0,
+                          "interp" : "linr"
+                        },
+                        "name" : "Lato",
+                        "weight" : "Regular"
+                      },
+                      "textAttributes" : {
+                        "type" : "textAttributeList",
+                        "keyframes" : [
+                          {
+                            "endTime" : 0,
+                            "time" : 0,
+                            "value" : [{"name":"fontWeight","rangeEnd":21,"rangeStart":0,"value":400,"valueType":"int"},{"name":"fgColor","rangeEnd":21,"rangeStart":0,"value":"(255,255,255,255)","valueType":"color"},{"name":"fontItalic","rangeEnd":21,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontName","rangeEnd":21,"rangeStart":0,"value":"Lato","valueType":"string"},{"name":"fontSize","rangeEnd":21,"rangeStart":0,"value":64,"valueType":"double"},{"name":"kerning","rangeEnd":21,"rangeStart":0,"value":0,"valueType":"double"},{"name":"underline","rangeEnd":21,"rangeStart":0,"value":0,"valueType":"int"},{"name":"strikethrough","rangeEnd":21,"rangeStart":0,"value":0,"valueType":"int"}],
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "attributes" : {
+                      "ident" : "",
+                      "autoRotateText" : true
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : -704.716981132075,
+                        "interp" : "eioe"
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : 360.377358490566,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 8754,
+                    "duration" : 300,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 300,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-HAlign" : "center",
+                      "default-LineSpace" : 0.0,
+                      "default-VAlign" : "center",
+                      "default-height" : 266.0,
+                      "default-text-attributes" : null,
+                      "default-translation0" : 0.0,
+                      "default-translation1" : 0.0,
+                      "default-width" : 266.0
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 137,
+                    "_type" : "Callout",
+                    "def" : {
+                      "kind" : "remix",
+                      "shape" : "thought-bubble",
+                      "style" : "abstract",
+                      "enable-ligatures" : 1.0,
+                      "fill-color-blue" : 0.615686274509804,
+                      "fill-color-green" : 0.647058823529412,
+                      "fill-color-opacity" : 1.0,
+                      "fill-color-red" : 0.337254901960784,
+                      "height" : 203.77358490566,
+                      "line-spacing" : 0.0,
+                      "stroke-color-blue" : 1.0,
+                      "stroke-color-green" : 1.0,
+                      "stroke-color-opacity" : 1.0,
+                      "stroke-color-red" : 1.0,
+                      "stroke-width" : 0.0,
+                      "tail-x" : -239.811320754717,
+                      "tail-y" : -118.11320754717,
+                      "width" : 303.77358490566,
+                      "word-wrap" : 1.0,
+                      "fill-style" : "solid",
+                      "horizontal-alignment" : "center",
+                      "resize-behavior" : "resizeText",
+                      "stroke-style" : "solid",
+                      "text" : "Even Aliens Can Learn",
+                      "vertical-alignment" : "center",
+                      "font" : {
+                        "color-blue" : 1.0,
+                        "color-green" : 1.0,
+                        "color-red" : 1.0,
+                        "size" : 64.0,
+                        "tracking" : 0.0,
+                        "name" : "Lato",
+                        "weight" : "Regular"
+                      },
+                      "textAttributes" : {
+                        "type" : "textAttributeList",
+                        "keyframes" : [
+                          {
+                            "endTime" : 0,
+                            "time" : 0,
+                            "value" : [{"name":"fontItalic","rangeEnd":21,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fgColor","rangeEnd":21,"rangeStart":0,"value":"(255,255,255,255)","valueType":"color"},{"name":"kerning","rangeEnd":21,"rangeStart":0,"value":0,"valueType":"double"},{"name":"fontWeight","rangeEnd":21,"rangeStart":0,"value":400,"valueType":"int"},{"name":"fontSize","rangeEnd":21,"rangeStart":0,"value":64,"valueType":"double"},{"name":"fontName","rangeEnd":21,"rangeStart":0,"value":"Lato","valueType":"string"},{"name":"underline","rangeEnd":21,"rangeStart":0,"value":0,"valueType":"int"},{"name":"strikethrough","rangeEnd":21,"rangeStart":0,"value":0,"valueType":"int"}],
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "attributes" : {
+                      "ident" : "",
+                      "autoRotateText" : true
+                    },
+                    "parameters" : {
+                      "translation0" : -666.981132075471,
+                      "translation1" : -320.754716981132,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 9347,
+                    "duration" : 300,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 300,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-HAlign" : "center",
+                      "default-LineSpace" : 0.0,
+                      "default-VAlign" : "center",
+                      "default-height" : 266.0,
+                      "default-text-attributes" : null,
+                      "default-translation0" : 0.0,
+                      "default-translation1" : 0.0,
+                      "default-width" : 266.0
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 138,
                     "_type" : "UnifiedMedia",
                     "video" : 
                         {
-                          "id" : 120,
+                          "id" : 139,
                           "_type" : "VMFile",
                           "src" : 14,
                           "trackNumber" : 1,
@@ -4689,7 +5595,7 @@
                           "effects" : [
 
                           ],
-                          "start" : 8890,
+                          "start" : 9870,
                           "duration" : 495,
                           "mediaStart" : 0,
                           "mediaDuration" : 295,
@@ -4700,7 +5606,7 @@
                         },
                     "audio" : 
                         {
-                          "id" : 121,
+                          "id" : 140,
                           "_type" : "AMFile",
                           "src" : 14,
                           "trackNumber" : 0,
@@ -4714,7 +5620,7 @@
                           "effects" : [
 
                           ],
-                          "start" : 8890,
+                          "start" : 9870,
                           "duration" : 495,
                           "mediaStart" : 0,
                           "mediaDuration" : 295,
@@ -4724,7 +5630,7 @@
                           }
                         }
 ,
-                    "start" : 8890,
+                    "start" : 9870,
                     "duration" : 495,
                     "mediaStart" : 0,
                     "mediaDuration" : 295,
@@ -4744,7 +5650,7 @@
                   {
                     "name" : "BarWipe",
                     "duration" : 60,
-                    "rightMedia" : 105,
+                    "rightMedia" : 120,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -4757,7 +5663,7 @@
                   {
                     "name" : "BarWipe",
                     "duration" : 60,
-                    "rightMedia" : 119,
+                    "rightMedia" : 138,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -4773,7 +5679,7 @@
                 "trackIndex" : 2,
                 "medias" : [
                   {
-                    "id" : 122,
+                    "id" : 141,
                     "_type" : "Callout",
                     "def" : {
                       "kind" : "remix",
@@ -4849,7 +5755,7 @@
                     }
                   },
                   {
-                    "id" : 123,
+                    "id" : 142,
                     "_type" : "Callout",
                     "def" : {
                       "kind" : "remix",
@@ -4925,38 +5831,126 @@
                     }
                   },
                   {
-                    "id" : 124,
-                    "_type" : "AMFile",
-                    "src" : 35,
-                    "trackNumber" : 1,
-                    "attributes" : {
-                      "ident" : "yt1s.com -  Taylor Swift   Shake it off Lyrics_v720P",
-                      "gain" : 1.0,
-                      "mixToMono" : false,
-                      "loudnessNormalization" : true
-                    },
-                      "channelNumber" : "0,1",
-                    "effects" : [
-
-                    ],
-                    "start" : 6933,
-                    "duration" : 410,
-                    "mediaStart" : 2890,
-                    "mediaDuration" : 410,
-                    "scalar" : 1,
-                    "metadata" : {
-                      "clipSpeedAttribute" : false
-                    },
-                    "animationTracks" : {
-
-                    }
-                  },
-                  {
-                    "id" : 125,
+                    "id" : 143,
                     "_type" : "UnifiedMedia",
                     "video" : 
                         {
-                          "id" : 126,
+                          "id" : 144,
+                          "_type" : "VMFile",
+                          "src" : 47,
+                          "trackNumber" : 1,
+                          "attributes" : {
+                            "ident" : "arLimpFish (online-video-cutter.com)"
+                          },
+                          "parameters" : {
+                            "translation0" : {
+                              "type" : "double",
+                              "defaultValue" : 798.0,
+                              "interp" : "eioe"
+                            },
+                            "translation1" : {
+                              "type" : "double",
+                              "defaultValue" : -180.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop0" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop1" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop2" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop3" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop0" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop1" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop2" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop3" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            }
+                          },
+                          "effects" : [
+
+                          ],
+                          "start" : 8968,
+                          "duration" : 340,
+                          "mediaStart" : 0,
+                          "mediaDuration" : 340,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        },
+                    "audio" : 
+                        {
+                          "id" : 145,
+                          "_type" : "AMFile",
+                          "src" : 47,
+                          "trackNumber" : 0,
+                          "attributes" : {
+                            "ident" : "",
+                            "gain" : 1.0,
+                            "mixToMono" : false,
+                            "loudnessNormalization" : true
+                          },
+                            "channelNumber" : "0,1",
+                          "effects" : [
+
+                          ],
+                          "start" : 8968,
+                          "duration" : 340,
+                          "mediaStart" : 0,
+                          "mediaDuration" : 340,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        }
+,
+                    "start" : 8968,
+                    "duration" : 340,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 340,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-height" : 720.0,
+                      "default-translation0" : 0.0,
+                      "default-translation1" : 0.0,
+                      "default-width" : 324.0
+                    }
+                  },
+                  {
+                    "id" : 146,
+                    "_type" : "UnifiedMedia",
+                    "video" : 
+                        {
+                          "id" : 147,
                           "_type" : "VMFile",
                           "src" : 15,
                           "trackNumber" : 1,
@@ -5028,7 +6022,7 @@
                           "effects" : [
 
                           ],
-                          "start" : 8890,
+                          "start" : 9870,
                           "duration" : 479,
                           "mediaStart" : 0,
                           "mediaDuration" : 205,
@@ -5039,7 +6033,7 @@
                         },
                     "audio" : 
                         {
-                          "id" : 127,
+                          "id" : 148,
                           "_type" : "AMFile",
                           "src" : 15,
                           "trackNumber" : 0,
@@ -5053,7 +6047,7 @@
                           "effects" : [
 
                           ],
-                          "start" : 8890,
+                          "start" : 9870,
                           "duration" : 479,
                           "mediaStart" : 0,
                           "mediaDuration" : 205,
@@ -5063,7 +6057,7 @@
                           }
                         }
 ,
-                    "start" : 8890,
+                    "start" : 9870,
                     "duration" : 479,
                     "mediaStart" : 0,
                     "mediaDuration" : 205,
@@ -5081,9 +6075,9 @@
                 ],
                 "transitions" : [
                   {
-                    "name" : "BarWipe",
+                    "name" : "AnimatedMosaic",
                     "duration" : 60,
-                    "rightMedia" : 123,
+                    "rightMedia" : 141,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -5096,7 +6090,20 @@
                   {
                     "name" : "BarWipe",
                     "duration" : 60,
-                    "rightMedia" : 125,
+                    "rightMedia" : 142,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "BarWipe",
+                    "duration" : 60,
+                    "rightMedia" : 146,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -5112,20 +6119,20 @@
                 "trackIndex" : 3,
                 "medias" : [
                   {
-                    "id" : 128,
+                    "id" : 149,
                     "_type" : "Callout",
                     "def" : {
                       "kind" : "remix",
                       "shape" : "text",
                       "style" : "basic",
                       "enable-ligatures" : 1.0,
-                      "height" : 99.0566031258061,
+                      "height" : 142.452830188679,
                       "line-spacing" : 0.0,
-                      "width" : 530.188664274395,
+                      "width" : 564.150928425339,
                       "word-wrap" : 1.0,
                       "horizontal-alignment" : "center",
                       "resize-behavior" : "resizeText",
-                      "text" : "Davian Flores",
+                      "text" : "Davian Flores\r(they/them/theirs)",
                       "vertical-alignment" : "center",
                       "font" : {
                         "color-blue" : 1.0,
@@ -5142,7 +6149,7 @@
                           {
                             "endTime" : 0,
                             "time" : 0,
-                            "value" : [{"name":"underline","rangeEnd":13,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontSize","rangeEnd":13,"rangeStart":0,"value":96,"valueType":"double"},{"name":"fontItalic","rangeEnd":13,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fgColor","rangeEnd":13,"rangeStart":0,"value":"(255,255,255,255)","valueType":"color"},{"name":"fontName","rangeEnd":13,"rangeStart":0,"value":"Montserrat","valueType":"string"},{"name":"strikethrough","rangeEnd":13,"rangeStart":0,"value":0,"valueType":"int"},{"name":"kerning","rangeEnd":13,"rangeStart":0,"value":0,"valueType":"double"},{"name":"fontWeight","rangeEnd":13,"rangeStart":0,"value":400,"valueType":"int"}],
+                            "value" : [{"name":"fgColor","rangeEnd":32,"rangeStart":0,"value":"(255,255,255,255)","valueType":"color"},{"name":"kerning","rangeEnd":32,"rangeStart":0,"value":0,"valueType":"double"},{"name":"fontSize","rangeEnd":32,"rangeStart":0,"value":96,"valueType":"double"},{"name":"underline","rangeEnd":32,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontWeight","rangeEnd":32,"rangeStart":0,"value":400,"valueType":"int"},{"name":"fontItalic","rangeEnd":32,"rangeStart":0,"value":0,"valueType":"int"},{"name":"strikethrough","rangeEnd":32,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontName","rangeEnd":32,"rangeStart":0,"value":"Montserrat","valueType":"string"}],
                             "duration" : 0
                           }
                         ]
@@ -5153,8 +6160,8 @@
                       "autoRotateText" : true
                     },
                     "parameters" : {
-                      "translation0" : 428.707554655255,
-                      "translation1" : -262.73584581771,
+                      "translation0" : 445.707554655255,
+                      "translation1" : -284.632072880583,
                       "sourceCrop0" : 0.0,
                       "sourceCrop1" : 0.0,
                       "sourceCrop2" : 0.0,
@@ -5188,7 +6195,7 @@
                     }
                   },
                   {
-                    "id" : 129,
+                    "id" : 150,
                     "_type" : "Callout",
                     "def" : {
                       "kind" : "remix",
@@ -5344,11 +6351,11 @@
                     }
                   },
                   {
-                    "id" : 130,
+                    "id" : 151,
                     "_type" : "UnifiedMedia",
                     "video" : 
                         {
-                          "id" : 131,
+                          "id" : 152,
                           "_type" : "VMFile",
                           "src" : 16,
                           "trackNumber" : 1,
@@ -5420,7 +6427,7 @@
                           "effects" : [
 
                           ],
-                          "start" : 8890,
+                          "start" : 9870,
                           "duration" : 479,
                           "mediaStart" : 0,
                           "mediaDuration" : 340,
@@ -5431,7 +6438,7 @@
                         },
                     "audio" : 
                         {
-                          "id" : 132,
+                          "id" : 153,
                           "_type" : "AMFile",
                           "src" : 16,
                           "trackNumber" : 0,
@@ -5445,7 +6452,7 @@
                           "effects" : [
 
                           ],
-                          "start" : 8890,
+                          "start" : 9870,
                           "duration" : 479,
                           "mediaStart" : 0,
                           "mediaDuration" : 340,
@@ -5455,7 +6462,7 @@
                           }
                         }
 ,
-                    "start" : 8890,
+                    "start" : 9870,
                     "duration" : 479,
                     "mediaStart" : 0,
                     "mediaDuration" : 340,
@@ -5473,9 +6480,9 @@
                 ],
                 "transitions" : [
                   {
-                    "name" : "BarWipe",
+                    "name" : "AnimatedMosaic",
                     "duration" : 60,
-                    "rightMedia" : 129,
+                    "rightMedia" : 149,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -5488,7 +6495,20 @@
                   {
                     "name" : "BarWipe",
                     "duration" : 60,
-                    "rightMedia" : 130,
+                    "rightMedia" : 150,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "BarWipe",
+                    "duration" : 60,
+                    "rightMedia" : 151,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -5504,7 +6524,7 @@
                 "trackIndex" : 4,
                 "medias" : [
                   {
-                    "id" : 133,
+                    "id" : 154,
                     "_type" : "IMFile",
                     "src" : 39,
                     "trackNumber" : 0,
@@ -5568,7 +6588,7 @@
 
                     ],
                     "start" : 0,
-                    "duration" : 300,
+                    "duration" : 1016,
                     "mediaStart" : 0,
                     "mediaDuration" : 1,
                     "scalar" : 1,
@@ -5584,7 +6604,7 @@
                     }
                   },
                   {
-                    "id" : 134,
+                    "id" : 155,
                     "_type" : "AMFile",
                     "src" : 19,
                     "trackNumber" : 0,
@@ -5611,7 +6631,7 @@
                     }
                   },
                   {
-                    "id" : 135,
+                    "id" : 156,
                     "_type" : "AMFile",
                     "src" : 13,
                     "trackNumber" : 1,
@@ -5625,7 +6645,7 @@
                     "effects" : [
 
                     ],
-                    "start" : 7763,
+                    "start" : 8728,
                     "duration" : 1692,
                     "mediaStart" : 0,
                     "mediaDuration" : 1692,
@@ -5637,163 +6657,26 @@
 
                     }
                   }
+                ],
+                "transitions" : [
+                  {
+                    "name" : "AnimatedMosaic",
+                    "duration" : 60,
+                    "rightMedia" : 154,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  }
                 ]
               },
               {
                 "trackIndex" : 5,
                 "medias" : [
-                  {
-                    "id" : 136,
-                    "_type" : "Callout",
-                    "def" : {
-                      "kind" : "remix",
-                      "shape" : "text",
-                      "style" : "basic",
-                      "enable-ligatures" : 1.0,
-                      "height" : 250.0,
-                      "line-spacing" : 0.0,
-                      "width" : 1494.33962264151,
-                      "word-wrap" : 1.0,
-                      "horizontal-alignment" : "center",
-                      "resize-behavior" : "resizeText",
-                      "text" : "Without handshaking practice",
-                      "vertical-alignment" : "center",
-                      "font" : {
-                        "color-blue" : 1.0,
-                        "color-green" : 1.0,
-                        "color-red" : 1.0,
-                        "size" : 96.0,
-                        "tracking" : 0.0,
-                        "name" : "Montserrat",
-                        "weight" : "Regular"
-                      },
-                      "textAttributes" : {
-                        "type" : "textAttributeList",
-                        "keyframes" : [
-                          {
-                            "endTime" : 0,
-                            "time" : 0,
-                            "value" : [{"name":"fgColor","rangeEnd":28,"rangeStart":0,"value":"(255,255,255,255)","valueType":"color"},{"name":"fontWeight","rangeEnd":28,"rangeStart":0,"value":400,"valueType":"int"},{"name":"strikethrough","rangeEnd":28,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontSize","rangeEnd":28,"rangeStart":0,"value":96,"valueType":"double"},{"name":"kerning","rangeEnd":28,"rangeStart":0,"value":0,"valueType":"double"},{"name":"fontName","rangeEnd":28,"rangeStart":0,"value":"Montserrat","valueType":"string"},{"name":"fontItalic","rangeEnd":28,"rangeStart":0,"value":0,"valueType":"int"},{"name":"underline","rangeEnd":28,"rangeStart":0,"value":0,"valueType":"int"}],
-                            "duration" : 0
-                          }
-                        ]
-                      }
-                    },
-                    "attributes" : {
-                      "ident" : "",
-                      "autoRotateText" : true
-                    },
-                    "parameters" : {
-                      "translation0" : 0.330188679245303,
-                      "translation1" : 415.0,
-                      "sourceCrop0" : 0.0,
-                      "sourceCrop1" : 0.0,
-                      "sourceCrop2" : 0.0,
-                      "sourceCrop3" : 0.0,
-                      "geometryCrop0" : 0.0,
-                      "geometryCrop1" : 0.0,
-                      "geometryCrop2" : 0.0,
-                      "geometryCrop3" : 0.0
-                    },
-                    "effects" : [
-
-                    ],
-                    "start" : 7768,
-                    "duration" : 300,
-                    "mediaStart" : 0,
-                    "mediaDuration" : 300,
-                    "scalar" : 1,
-                    "metadata" : {
-                      "clipSpeedAttribute" : false,
-                      "default-HAlign" : "center",
-                      "default-LineSpace" : 0.0,
-                      "default-VAlign" : "center",
-                      "default-height" : 250.0,
-                      "default-text-attributes" : null,
-                      "default-translation0" : 0.0,
-                      "default-translation1" : 0.0,
-                      "default-width" : 400.0
-                    },
-                    "animationTracks" : {
-
-                    }
-                  },
-                  {
-                    "id" : 137,
-                    "_type" : "Callout",
-                    "def" : {
-                      "kind" : "remix",
-                      "shape" : "text",
-                      "style" : "basic",
-                      "enable-ligatures" : 1.0,
-                      "height" : 250.0,
-                      "line-spacing" : 0.0,
-                      "width" : 1258.49056603774,
-                      "word-wrap" : 1.0,
-                      "horizontal-alignment" : "center",
-                      "resize-behavior" : "resizeText",
-                      "text" : "Even Aliens can Learn",
-                      "vertical-alignment" : "center",
-                      "font" : {
-                        "color-blue" : 1.0,
-                        "color-green" : 1.0,
-                        "color-red" : 1.0,
-                        "size" : 96.0,
-                        "tracking" : 0.0,
-                        "name" : "Montserrat",
-                        "weight" : "Regular"
-                      },
-                      "textAttributes" : {
-                        "type" : "textAttributeList",
-                        "keyframes" : [
-                          {
-                            "endTime" : 0,
-                            "time" : 0,
-                            "value" : [{"name":"underline","rangeEnd":21,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontItalic","rangeEnd":21,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontSize","rangeEnd":21,"rangeStart":0,"value":96,"valueType":"double"},{"name":"fontName","rangeEnd":21,"rangeStart":0,"value":"Montserrat","valueType":"string"},{"name":"strikethrough","rangeEnd":21,"rangeStart":0,"value":0,"valueType":"int"},{"name":"kerning","rangeEnd":21,"rangeStart":0,"value":0,"valueType":"double"},{"name":"fgColor","rangeEnd":21,"rangeStart":0,"value":"(255,255,255,255)","valueType":"color"},{"name":"fontWeight","rangeEnd":21,"rangeStart":0,"value":400,"valueType":"int"}],
-                            "duration" : 0
-                          }
-                        ]
-                      }
-                    },
-                    "attributes" : {
-                      "ident" : "",
-                      "autoRotateText" : true
-                    },
-                    "parameters" : {
-                      "translation0" : -62.9528301886792,
-                      "translation1" : 415.0,
-                      "sourceCrop0" : 0.0,
-                      "sourceCrop1" : 0.0,
-                      "sourceCrop2" : 0.0,
-                      "sourceCrop3" : 0.0,
-                      "geometryCrop0" : 0.0,
-                      "geometryCrop1" : 0.0,
-                      "geometryCrop2" : 0.0,
-                      "geometryCrop3" : 0.0
-                    },
-                    "effects" : [
-
-                    ],
-                    "start" : 8414,
-                    "duration" : 300,
-                    "mediaStart" : 0,
-                    "mediaDuration" : 300,
-                    "scalar" : 1,
-                    "metadata" : {
-                      "clipSpeedAttribute" : false,
-                      "default-HAlign" : "center",
-                      "default-LineSpace" : 0.0,
-                      "default-VAlign" : "center",
-                      "default-height" : 250.0,
-                      "default-text-attributes" : null,
-                      "default-translation0" : 0.0,
-                      "default-translation1" : 0.0,
-                      "default-width" : 400.0
-                    },
-                    "animationTracks" : {
-
-                    }
-                  }
                 ]
               },
               {
@@ -5927,7 +6810,7 @@
   },
   "metadata" : {
     "AutoSaveFile" : "",
-    "CanvasZoom" : 53,
+    "CanvasZoom" : 81,
     "Date" : "2021-12-02 09:24:48 AM",
     "Fit" : 1,
     "IsAutoSave" : false,
@@ -5937,6 +6820,6 @@
     "ProjectDimensionsChanged" : "1",
     "Title" : "Hackathon-AR-Dec-2021",
     "audioNarrationNotes" : "",
-    "calloutStyle" : "Basic"
+    "calloutStyle" : "Abstract"
   }
 }
